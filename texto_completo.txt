@@ -1,0 +1,159 @@
+Ecosistema de Analítica Institucional – Sede Bogotá
+
+Marco Conceptual y Herramientas de Inteligencia de Datos de la Oficina de Planeación y Estadística (OPE)
+
+La Universidad Nacional de Colombia — Sede Bogotá, comprometida con la excelencia y la generación de conocimiento, ha consolidado una cultura de toma de decisiones basada en datos para comprender a fondo sus dinámicas institucionales y su impacto en el entorno. Con el propósito fundamental de fortalecer el conocimiento de la Universidad y, en particular, de la Sede Bogotá, la Oficina de Planeación y Estadística (OPE) ha desarrollado un robusto Ecosistema de Analítica Institucional. Este ecosistema está conformado por una serie de plataformas tecnológicas integradas que operan bajo modalidades de autoservicio, centralización de datos y transparencia, proporcionando evidencia técnica esencial para directivos, docentes, investigadores, estudiantes, entes de control y la ciudadanía en general.
+
+Componentes Principales del Ecosistema
+
+1. La Sede en Cifras 
+
+ https://planeacion.bogota.unal.edu.co/sede_en_cifras/
+
+Herramienta interactiva diseñada para facilitar la consulta abierta y el análisis profundo de la información institucional. A través de una interfaz moderna y amigable, los usuarios pueden explorar, filtrar y cruzar variables para personalizar la visualización de los datos, transformando estadísticas complejas en información accesible y estratégica para la toma de decisiones. Compuesta por 34 tableros interactivos organizados en 5 grandes categorías:
+
+Académicos (12 tableros): Incluye información detallada sobre programas académicos, aspirantes, admitidos, matriculados, graduados, tasas de deserción, resultados Saber Pro, programas de admisión especial, el PEAMA Sumapaz y la movilidad (tanto estudiantil como docente), además de datos sobre docentes de planta y ocasionales.
+
+Investigación y Extensión (8 tableros): Agrupa estadísticas fundamentales sobre revistas indexadas, movilidad en investigación, grupos de investigación, investigadores reconocidos, semilleros, productividad investigativa, laboratorios y proyectos de investigación y extensión.
+
+La Sede y el Distrito Capital (4 tableros): Permite analizar el impacto de la Universidad en su entorno directo, mostrando la distribución de docentes, matriculados y graduados en el Distrito Capital, así como los inscritos en el SNIES.
+
+Bienestar (6 tableros): Consolida datos sobre acompañamiento integral, participación en cultura, actividad física y deporte, servicios de salud, apoyos de Gestión y Fomento Socioeconómico, y el Perfil Integral de Ingreso de los estudiantes.
+
+Apoyo a la Gestión (4 tableros): Ofrece herramientas analíticas operativas como el Sistema de Información Geográfico, la caracterización del personal administrativo, el seguimiento a procesos disciplinarios y el cálculo de costos por estudiante.
+
+2. Indicadores Estratégicos 
+
+https://planeacion.bogota.unal.edu.co/indicadores/
+
+Suite especializada de tableros que nace de la interrelación y el procesamiento de los datos de “La Sede en Cifras” para identificar particularidades y tendencias críticas. Su objetivo principal es transformar los datos en información precisa y accionable, sirviendo como una herramienta gerencial directa para fortalecer y fundamentar la toma de decisiones estratégicas en las áreas clave de la Universidad. Compuesta por 31 tableros interactivos organizados en 4 grandes categorías:
+
+Académicos (16 indicadores): Evalúa la eficiencia y calidad del ciclo de vida del estudiante y de la oferta de la Sede. Incluye indicadores críticos como las tasas de deserción en pregrado (SIA-OPE y SPADIES), tasas de crecimiento de matriculados (general y por facultad), tasas de graduación por cohorte y semestres de permanencia (tanto en pregrado como en posgrado), tasas de selectividad y absorción, así como el porcentaje de acreditación de los programas vigentes.
+
+Docentes (3 indicadores): Se enfoca en las capacidades, distribución y cualificación del cuerpo docente. Muestra el porcentaje de docentes ocasionales, la movilidad docente y la proporción de profesores que cuentan con título de doctorado.
+
+Bienestar (7 indicadores): Mide el alcance y el impacto de los programas de apoyo institucional. Integra indicadores sobre el promedio de participaciones y usuarios en acompañamiento integral, actividad física y deporte, cultura y salud; además, detalla el valor total y la cantidad de apoyos otorgados a través de Gestión y Fomento Socioeconómico (GFSE) en alimentación, transporte y alojamiento.
+
+Género (5 indicadores): Permite analizar las brechas y la paridad poblacional dentro del campus. Detalla la participación porcentual (Femenino, Masculino, No binario, Transgénero) en las distintas etapas y roles de la vida universitaria: aspirantes, admitidos, matrícula total, docencia y cargos administrativos.
+
+3. OPEData
+
+https://opedata.unal.edu.co/
+
+OPEData es el portal institucional de analítica y gestión de datos de la Oficina de Planeación y Estadística de la Sede Bogotá. Funciona como el núcleo estratégico de inteligencia interna para la toma de decisiones gerenciales, permitiendo un acceso seguro y exclusivo mediante credenciales institucionales para profundizar en la planeación y evaluación universitaria.
+
+Seguimiento detallado a proyectos: Herramientas analíticas avanzadas para el monitoreo financiero y operativo, desde el presupuesto general hasta la ejecución detallada de contratos.
+
+Acompañamiento estudiantil integral: Monitoreo de trayectorias estudiantiles que abarca movilidad académica, métricas de bienestar, perfil de ingreso y programas de apoyo.
+
+Identificación de vulnerabilidad y trayectorias: Métricas focalizadas para monitorear riesgos académicos, tasas de deserción y permanencia, facilitando una respuesta institucional rápida.
+
+Caracterización del personal administrativo: Gestión de datos detallados sobre la demografía, modalidades de vinculación y desarrollo del talento humano.
+
+Entorno de pruebas e innovación: Espacio colaborativo y seguro para la socialización e iteración de nuevos tableros analíticos antes de su liberación general.
+
+4. Plataforma de Registro de Informes de Gestión (PRIG)
+
+https://prig.bogota.unal.edu.co/
+
+Herramienta que tiene como propósito la sistematización del proceso por el cual las diferentes dependencias de la Sede Bogotá reportan anualmente sus logros, dificultades, mejoras y acciones correctivas. A partir de este proceso la Oficina de Planeación y Estadística-OPE consolida la información y genera los Informes de Gestión, Informes de Rendición de Cuentas y otros reportes de gestión de la Sede. Tiene como capacidades clave:
+
+Gestión centralizada de indicadores: Automatiza el registro y análisis de información, permitiendo definir indicadores por dependencia y consolidar los logros institucionales en una única plataforma.
+
+Soporte estratégico y divulgación: Facilita la toma de decisiones basadas en datos mediante la generación de boletines y reportes automáticos que democratizan la información de gestión.
+
+Trazabilidad histórica: Permite un seguimiento continuo de los logros y avances de la Sede en el tiempo, facilitando el análisis comparativo.
+
+Visualización y búsqueda inteligente: Incluye herramientas de visualización dinámica para comparar dependencias y búsqueda semántica para identificar temáticas específicas en los informes reportados.
+
+5. La Sede en Contexto
+
+https://planeacion.bogota.unal.edu.co/sede_en_contexto/
+
+Espacio de la Oficina de Planeación y Estadística que ofrece estudios y análisis situados, permitiendo comprender a la Sede y a la Universidad dentro de sus contextos local, regional e institucional con una perspectiva comparativa.
+
+Análisis situados: Provee estudios detallados en temas estratégicos que permiten dimensionar el desempeño institucional frente al entorno.
+
+Perspectiva comparativa: Facilita la comprensión del impacto y evolución de la Sede en relación con variables externas y referentes institucionales.
+
+Disponibilidad de información: Plataforma de consulta abierta donde se publican documentos, estudios de tendencias y análisis desagregados por facultades.
+
+6. Databot
+
+El Databot representa la frontera de innovación en la interacción con la información institucional, integrando capacidades de inteligencia artificial conversacional al ecosistema de la OPE. Su propósito principal es permitir a la comunidad universitaria y a los gestores de planeación realizar consultas directas en lenguaje natural sobre las bases de datos, estadísticas e informes de la Sede.
+
+Interacción en Lenguaje Natural: Los usuarios pueden formular preguntas directas (ej. "¿Cuál fue el total de graduados de maestría en 2024?" o "¿Cual es facultad que más ha incrementado su número de matriculados en los últimos 5 años?") sin necesidad de dominar herramientas de BI o SQL.
+
+Conexión con la Base Institucional: Consulta y sintetiza información proveniente de los diferentes repositorios y tableros del ecosistema de analítica.
+
+Democratización de la Información: Agiliza la preparación de insumos, reportes y diagnósticos al eliminar barreras técnicas de consulta.
+
+Generación de Visualizaciones: Además de la respuesta textual, la herramienta genera gráficos comparativos que complementan la información y facilitan la interpretación de los resultados.
+
+Herramienta
+
+Propósito Principal
+
+Nivel de Acceso
+
+Tipo
+
+La Sede en Cifras
+
+Consulta abierta y análisis de datos institucionales.
+
+Público
+
+Tableros interactivos
+
+Indicadores Estratégicos
+
+Métricas cruzadas para la toma de decisiones.
+
+Público
+
+Tableros interactivos
+
+OPEData
+
+Inteligencia interna y seguimiento a proyectos.
+
+Interno
+
+Tableros analíticos
+
+PRIG
+
+Registro y consolidación de Informes de Gestión.
+
+Interno
+
+Plataforma de gestión
+
+La Sede en Contexto
+
+Estudios situados y análisis comparativos.
+
+Público
+
+Documentos / Web
+
+Datachat
+
+Asistente IA para consulta de cifras en lenguaje natural.
+
+Institucional
+
+Sistema conversacional
+
+Valor Estratégico e Impacto Institucional
+
+La integración de estas seis herramientas dentro del Ecosistema de Analítica Institucional permite a la Sede Bogotá de la Universidad Nacional de Colombia:
+
+Transformar datos dispersos en decisiones estratégicas: Reducir la fragmentación de la información administrativa y académica para basar la planificación en evidencia técnica.
+
+Promover la cultura del autoservicio de datos: Capacitar a las facultades y dependencias para explotar sus propios datos mediante tableros e interfaces ágiles.
+
+Fortalecer la transparencia y el control social: Poner a disposición de la ciudadanía de forma clara, accesible e interactiva los informes de gestión y las cifras institucionales.
+
+Incorporar tecnología de vanguardia: Aplicar analítica predictiva e inteligencia artificial para anticipar problemáticas como la deserción estudiantil y optimizar la administración pública universitaria.

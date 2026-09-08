@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecosistema de Analítica Institucional de la Sede Bogotá | OPE - UNAL</title>
+  <meta name="description"
+    content="Ecosistema de Analítica Institucional de la Sede Bogotá - Oficina de Planeación y Estadística (OPE) de la Universidad Nacional de Colombia.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%2310b981'/><text y='65' font-size='48' font-weight='bold' font-family='sans-serif' text-anchor='middle' x='50' fill='%23ffffff'>UN</text></svg>">
+</head>
+
+<body>
+
+  <!-- Fondo animado con iluminación ambiental sutil -->
+  <div class="bg-mesh"></div>
+
+  <!-- Barra de Progreso Superior -->
+  <div id="slide-progress" class="slide-progress-bar"></div>
+
+  <!-- Cabecera Institucional Oficial UNAL (kitAppUnal) -->
+  <header class="m-0 app-header-unal" id="app-header">
+    <div class="section-icon">
+      <div class="banner-container">
+        <a href="https://unal.edu.co/" target="_blank" rel="noopener" class="icon-link">
+          <img src="logo_unal_circle.png"
+            onerror="this.onerror=null; this.src='https://gestionapp.medellin.unal.edu.co/cdn/assets/images/logo_unal_circle.png'"
+            alt="Escudo de UNAL" mime="image/png" type="image" />
+        </a>
+      </div>
+    </div>
+
+    <div id="divider-top"></div>
+
+    <div id="section-menu-middle">
+      <div class="padded-container">
+        <p id="name-aplication">Ecosistema de Analítica Institucional | Sede Bogotá</p>
+      </div>
+
+      <div class="header-actions">
+        <!-- Selector de Modo: Presentación vs Executive Hub -->
+        <div class="mode-toggle">
+          <button id="btn-mode-slides" class="mode-btn active" title="Modo Presentación">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+            Presentación
+          </button>
+          <button id="btn-mode-dashboard" class="mode-btn" title="Modo Executive Hub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+            Executive Hub
+          </button>
+        </div>
+
+        <!-- Botón de Pantalla Completa [F] -->
+        <button id="btn-fullscreen" class="btn-icon-action" title="Pantalla Completa (Tecla F)">
+          <svg id="fullscreen-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+          </svg>
+          <span id="fullscreen-label">Pantalla Completa</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MODO PRESENTACIÓN (SLIDE DECK EN 16:9)
+       ========================================================================== -->
+  <main id="presentation-viewport" class="presentation-viewport">
+    <div class="slides-wrapper">
+
+      <!-- ====================================================================
+           SLIDE 1: PORTADA SOLA
+           Frase: Ecosistema de Analítica Institucional de la Sede Bogotá
+           Texto: Oficina de Planeación y Estadística - OPE
+           Logo oficial UNAL
+           ==================================================================== -->
+      <section class="slide active" id="slide-1" data-title="Portada Institucional">
+        <div class="slide-cover">
+          <div class="cover-logo-wrapper">
+            <div class="cover-institution-title">Universidad Nacional de Colombia</div>
+            <img src="Logo_OPE_Negro_01.png" alt="Oficina de Planeación y Estadística - OPE Sede Bogotá"
+              class="cover-ope-logo"
+              onerror="this.onerror=null; this.src='https://github.com/datosqueteinspiran/LogoOPE/blob/main/Logo_OPE_Negro_01.png?raw=true'">
+          </div>
+
+          <h1 class="cover-main-phrase">
+            <span class="text-highlight">Ecosistema de Analítica Institucional</span><br>
+            de la Sede Bogotá
+          </h1>
+
+          <div class="cover-ope-pill">
+            <span class="unal-dot"></span>
+            <div class="cover-ope-text">
+              Oficina de Planeación y Estadística — <strong>OPE</strong>
+            </div>
+          </div>
+
+          <button class="cover-btn-start" onclick="goToSlide(2)">
+            Ver Herramientas del Ecosistema
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 2: PANORAMA DE TODAS LAS HERRAMIENTAS
+           Con algo muy distintivo de cada herramienta
+           ==================================================================== -->
+      <section class="slide" id="slide-2" data-title="Panorama de Herramientas">
+        <div class="slide-overview">
+          <div class="slide-header" style="margin-bottom: 0.75rem;">
+            <h2 class="slide-title">Las 6 Herramientas de <span class="highlight">Inteligencia y Datos</span></h2>
+            <p class="slide-subtitle">Una suite articulada para la toma de decisiones basada en datos en la Sede Bogotá.
+            </p>
+          </div>
+
+          <div class="overview-grid">
+            <!-- 1. Sede en Cifras -->
+            <div class="overview-card" onclick="goToSlide(3)">
+              <h3 class="overview-tool-title">La Sede en Cifras</h3>
+              <p class="overview-card-desc">
+                Tableros detallados de las principales cifras de la Sede con acceso público.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://planeacion.bogota.unal.edu.co/sede_en_cifras/" target="_blank"
+                  rel="noopener noreferrer" class="overview-external-link" onclick="event.stopPropagation()"
+                  title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>planeacion.bogota.unal.edu.co/sede_en_cifras/</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 2. Indicadores Estratégicos -->
+            <div class="overview-card" onclick="goToSlide(4)">
+              <h3 class="overview-tool-title">Indicadores Estratégicos</h3>
+              <p class="overview-card-desc">
+                Información cruzada de las principales cifras de la Sede.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://planeacion.bogota.unal.edu.co/indicadores/" target="_blank" rel="noopener noreferrer"
+                  class="overview-external-link" onclick="event.stopPropagation()"
+                  title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>planeacion.bogota.unal.edu.co/indicadores/</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 3. OPEData -->
+            <div class="overview-card" onclick="goToSlide(5)">
+              <h3 class="overview-tool-title">OPEData</h3>
+              <p class="overview-card-desc">
+                Tableros de análisis interno con acceso restringido.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://opedata.unal.edu.co/" target="_blank" rel="noopener noreferrer"
+                  class="overview-external-link" onclick="event.stopPropagation()"
+                  title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>opedata.unal.edu.co/</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 4. PRIG -->
+            <div class="overview-card" onclick="goToSlide(6)">
+              <h3 class="overview-tool-title">PRIG</h3>
+              <p class="overview-card-desc">
+                Sistematización de cifras y logros de la gestión anual.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://prig.bogota.unal.edu.co/" target="_blank" rel="noopener noreferrer"
+                  class="overview-external-link" onclick="event.stopPropagation()"
+                  title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>prig.bogota.unal.edu.co/</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 5. La Sede en Contexto -->
+            <div class="overview-card" onclick="goToSlide(7)">
+              <h3 class="overview-tool-title">La Sede en Contexto</h3>
+              <p class="overview-card-desc">
+                Estudios estratégicos de la Sede frente a su entorno.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://planeacion.bogota.unal.edu.co/sede_en_contexto/" target="_blank"
+                  rel="noopener noreferrer" class="overview-external-link" onclick="event.stopPropagation()"
+                  title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>planeacion.bogota.unal.edu.co/sede_en_contexto/</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 6. Databot -->
+            <div class="overview-card" onclick="goToSlide(8)">
+              <h3 class="overview-tool-title">Databot</h3>
+              <p class="overview-card-desc">
+                Chatbot con IA para la consulta de cifras institucionales.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <span class="overview-external-link" style="color:var(--text-muted); cursor:default;"
+                  onclick="event.stopPropagation()">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                  </svg>
+                  <span>Innovación IA · Sede Bogotá</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 3: 1. LA SEDE EN CIFRAS
+           Texto completo literal del documento + Animación de imágenes
+           ==================================================================== -->
+      <section class="slide" id="slide-3" data-title="1. La Sede en Cifras">
+        <div class="tool-slide-layout">
+          <!-- Columna Izquierda: Texto literal completo -->
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-public">Público • Tableros Interactivos</span>
+                <span class="stat-chip">34 Tableros</span>
+              </div>
+              <h2 class="tool-main-name">1. La Sede en Cifras</h2>
+              <a class="tool-url-link" href="https://planeacion.bogota.unal.edu.co/sede_en_cifras/" target="_blank">
+                ↗ https://planeacion.bogota.unal.edu.co/sede_en_cifras/
+              </a>
+            </div>
+
+            <p class="tool-doc-intro">
+              Herramienta interactiva diseñada para facilitar la consulta abierta y el análisis profundo de la
+              información institucional. A través de una interfaz moderna y amigable, los usuarios pueden explorar,
+              filtrar y cruzar variables para personalizar la visualización de los datos, transformando estadísticas
+              complejas en información accesible y estratégica para la toma de decisiones. Compuesta por 34 tableros
+              interactivos organizados en 5 grandes categorías:
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Académicos</span>
+                  <span class="doc-category-count">12 tableros</span>
+                </div>
+                <p class="doc-category-text">
+                  Incluye información detallada sobre programas académicos, aspirantes, admitidos, matriculados,
+                  graduados, tasas de deserción, resultados Saber Pro, programas de admisión especial, el PEAMA Sumapaz
+                  y la movilidad (tanto estudiantil como docente), además de datos sobre docentes de planta y
+                  ocasionales.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Investigación y Extensión</span>
+                  <span class="doc-category-count">8 tableros</span>
+                </div>
+                <p class="doc-category-text">
+                  Agrupa estadísticas fundamentales sobre revistas indexadas, movilidad en investigación, grupos de
+                  investigación, investigadores reconocidos, semilleros, productividad investigativa, laboratorios y
+                  proyectos de investigación y extensión.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>La Sede y el Distrito Capital</span>
+                  <span class="doc-category-count">4 tableros</span>
+                </div>
+                <p class="doc-category-text">
+                  Permite analizar el impacto de la Universidad en su entorno directo, mostrando la distribución de
+                  docentes, matriculados y graduados en el Distrito Capital, así como los inscritos en el SNIES.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Bienestar</span>
+                  <span class="doc-category-count">6 tableros</span>
+                </div>
+                <p class="doc-category-text">
+                  Consolida datos sobre acompañamiento integral, participación en cultura, actividad física y deporte,
+                  servicios de salud, apoyos de Gestión y Fomento Socioeconómico, y el Perfil Integral de Ingreso de los
+                  estudiantes.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Apoyo a la Gestión</span>
+                  <span class="doc-category-count">4 tableros</span>
+                </div>
+                <p class="doc-category-text">
+                  Ofrece herramientas analíticas operativas como el Sistema de Información Geográfico, la
+                  caracterización del personal administrativo, el seguimiento a procesos disciplinarios y el cálculo de
+                  costos por estudiante.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Vitrina animada con carrusel automático -->
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-cifras">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">planeacion.bogota.unal.edu.co/sede_en_cifras/</div>
+                <span class="stat-chip" style="font-size: 0.68rem;">Galería OPE</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-cifras"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('cifras')">
+                <img class="carousel-slide-img active" src="Imágenes/01 Sede en Cifras/01 Inicio.png"
+                  alt="01 Inicio - La Sede en Cifras">
+                <img class="carousel-slide-img" src="Imágenes/01 Sede en Cifras/02 Tablero Matriculados.png"
+                  alt="02 Tablero Matriculados - La Sede en Cifras">
+                <img class="carousel-slide-img" src="Imágenes/01 Sede en Cifras/03 Cifras a profundidad.png"
+                  alt="03 Cifras a profundidad - La Sede en Cifras">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-cifras">Vista: 01 Inicio</div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('cifras')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-cifras" onclick="toggleCarouselPlay('cifras')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('cifras')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-cifras">1 / 3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 4: 2. INDICADORES ESTRATÉGICOS
+           Texto completo literal del documento + Animación de imágenes
+           ==================================================================== -->
+      <section class="slide" id="slide-4" data-title="2. Indicadores Estratégicos">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-public">Público • Tableros Interactivos</span>
+                <span class="stat-chip">31 Indicadores</span>
+              </div>
+              <h2 class="tool-main-name">2. Indicadores Estratégicos</h2>
+              <a class="tool-url-link" href="https://planeacion.bogota.unal.edu.co/indicadores/" target="_blank">
+                ↗ https://planeacion.bogota.unal.edu.co/indicadores/
+              </a>
+            </div>
+
+            <p class="tool-doc-intro">
+              Suite especializada de tableros que nace de la interrelación y el procesamiento de los datos de “La Sede
+              en Cifras” para identificar particularidades y tendencias críticas. Su objetivo principal es transformar
+              los datos en información precisa y accionable, sirviendo como una herramienta gerencial directa para
+              fortalecer y fundamentar la toma de decisiones estratégicas en las áreas clave de la Universidad.
+              Compuesta por 31 tableros interactivos organizados en 4 grandes categorías:
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Académicos</span>
+                  <span class="doc-category-count">16 indicadores</span>
+                </div>
+                <p class="doc-category-text">
+                  Evalúa la eficiencia y calidad del ciclo de vida del estudiante y de la oferta de la Sede. Incluye
+                  indicadores críticos como las tasas de deserción en pregrado (SIA-OPE y SPADIES), tasas de crecimiento
+                  de matriculados (general y por facultad), tasas de graduación por cohorte y semestres de permanencia
+                  (tanto en pregrado como en posgrado), tasas de selectividad y absorción, así como el porcentaje de
+                  acreditación de los programas vigentes.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Docentes</span>
+                  <span class="doc-category-count">3 indicadores</span>
+                </div>
+                <p class="doc-category-text">
+                  Se enfoca en las capacidades, distribución y cualificación del cuerpo docente. Muestra el porcentaje
+                  de docentes ocasionales, la movilidad docente y la proporción de profesores que cuentan con título de
+                  doctorado.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Bienestar</span>
+                  <span class="doc-category-count">7 indicadores</span>
+                </div>
+                <p class="doc-category-text">
+                  Mide el alcance y el impacto de los programas de apoyo institucional. Integra indicadores sobre el
+                  promedio de participaciones y usuarios en acompañamiento integral, actividad física y deporte, cultura
+                  y salud; además, detalla el valor total y la cantidad de apoyos otorgados a través de Gestión y
+                  Fomento Socioeconómico (GFSE) en alimentación, transporte y alojamiento.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Género</span>
+                  <span class="doc-category-count">5 indicadores</span>
+                </div>
+                <p class="doc-category-text">
+                  Permite analizar las brechas y la paridad poblacional dentro del campus. Detalla la participación
+                  porcentual (Femenino, Masculino, No binario, Transgénero) en las distintas etapas y roles de la vida
+                  universitaria: aspirantes, admitidos, matrícula total, docencia y cargos administrativos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-indicadores">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">planeacion.bogota.unal.edu.co/indicadores/</div>
+                <span class="stat-chip" style="font-size: 0.68rem;">Estratégico</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-indicadores"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('indicadores')">
+                <img class="carousel-slide-img active" src="Imágenes/02 Indicadores estratégicos/01 Inicio.png"
+                  alt="01 Inicio - Indicadores Estratégicos">
+                <img class="carousel-slide-img"
+                  src="Imágenes/02 Indicadores estratégicos/02 Estudiantes por docente.png"
+                  alt="02 Estudiantes por docente - Indicadores Estratégicos">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-indicadores">Vista: 01 Inicio Indicadores</div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('indicadores')"
+                    title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-indicadores" onclick="toggleCarouselPlay('indicadores')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('indicadores')"
+                    title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-indicadores">1 / 2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 5: 3. OPEDATA
+           Texto completo literal del documento + Animación de imágenes
+           ==================================================================== -->
+      <section class="slide" id="slide-5" data-title="3. OPEData">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-internal">Interno • Tableros Analíticos</span>
+                <span class="stat-chip">Acceso Restringido</span>
+              </div>
+              <h2 class="tool-main-name">3. OPEData</h2>
+              <a class="tool-url-link" href="https://opedata.unal.edu.co/" target="_blank">
+                ↗ https://opedata.unal.edu.co/
+              </a>
+            </div>
+
+            <p class="tool-doc-intro">
+              OPEData es el portal institucional de analítica y gestión de datos de la Oficina de Planeación y
+              Estadística de la Sede Bogotá. Funciona como el núcleo estratégico de inteligencia interna para la toma de
+              decisiones gerenciales, permitiendo un acceso seguro y exclusivo mediante credenciales institucionales
+              para profundizar en la planeación y evaluación universitaria.
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Seguimiento detallado a proyectos</span>
+                </div>
+                <p class="doc-category-text">
+                  Herramientas analíticas avanzadas para el monitoreo financiero y operativo, desde el presupuesto
+                  general hasta la ejecución detallada de contratos.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Acompañamiento estudiantil integral</span>
+                </div>
+                <p class="doc-category-text">
+                  Monitoreo de trayectorias estudiantiles que abarca movilidad académica, métricas de bienestar, perfil
+                  de ingreso y programas de apoyo.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Identificación de vulnerabilidad y trayectorias</span>
+                </div>
+                <p class="doc-category-text">
+                  Métricas focalizadas para monitorear riesgos académicos, tasas de deserción y permanencia, facilitando
+                  una respuesta institucional rápida.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Caracterización del personal administrativo</span>
+                </div>
+                <p class="doc-category-text">
+                  Gestión de datos detallados sobre la demografía, modalidades de vinculación y desarrollo del talento
+                  humano.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Entorno de pruebas e innovación</span>
+                </div>
+                <p class="doc-category-text">
+                  Espacio colaborativo y seguro para la socialización e iteración de nuevos tableros analíticos antes de
+                  su liberación general.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-opedata">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">opedata.unal.edu.co/</div>
+                <span class="stat-chip" style="font-size: 0.68rem; color:#fbbf24;">Seguro</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-opedata"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('opedata')">
+                <img class="carousel-slide-img active" src="Imágenes/03 OPEData/01 Login.png" alt="01 Login - OPEData">
+                <img class="carousel-slide-img" src="Imágenes/03 OPEData/02 Lista de tableros.png"
+                  alt="02 Lista de tableros - OPEData">
+                <img class="carousel-slide-img" src="Imágenes/03 OPEData/03 Accesos por usuario.png"
+                  alt="03 Accesos por usuario - OPEData">
+                <img class="carousel-slide-img" src="Imágenes/03 OPEData/04 Usuarios por vista.png"
+                  alt="04 Usuarios por vista - OPEData">
+                <img class="carousel-slide-img" src="Imágenes/03 OPEData/05 Tableros financieros.png"
+                  alt="05 Tableros financieros - OPEData">
+                <img class="carousel-slide-img" src="Imágenes/03 OPEData/06 Resumen financiero.png"
+                  alt="06 Resumen financiero - OPEData">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-opedata">Vista: 01 Login</div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('opedata')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-opedata" onclick="toggleCarouselPlay('opedata')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('opedata')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-opedata">1 / 6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 6: 4. PRIG
+           Texto completo literal del documento + Animación de imágenes
+           ==================================================================== -->
+      <section class="slide" id="slide-6" data-title="4. PRIG">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-internal">Interno • Plataforma de Gestión</span>
+                <span class="stat-chip">Sistematización</span>
+              </div>
+              <h2 class="tool-main-name">4. Plataforma de Registro de Informes de Gestión (PRIG)</h2>
+              <a class="tool-url-link" href="https://prig.bogota.unal.edu.co/" target="_blank">
+                ↗ https://prig.bogota.unal.edu.co/
+              </a>
+            </div>
+
+            <p class="tool-doc-intro">
+              Herramienta que tiene como propósito la sistematización del proceso por el cual las diferentes
+              dependencias de la Sede Bogotá reportan anualmente sus logros, dificultades, mejoras y acciones
+              correctivas. A partir de este proceso la Oficina de Planeación y Estadística-OPE consolida la información
+              y genera los Informes de Gestión, Informes de Rendición de Cuentas y otros reportes de gestión de la Sede.
+              Tiene como capacidades clave:
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Gestión centralizada de indicadores</span>
+                </div>
+                <p class="doc-category-text">
+                  Automatiza el registro y análisis de información, permitiendo definir indicadores por dependencia y
+                  consolidar los logros institucionales en una única plataforma.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Soporte estratégico y divulgación</span>
+                </div>
+                <p class="doc-category-text">
+                  Facilita la toma de decisiones basadas en datos mediante la generación de boletines y reportes
+                  automáticos que democratizan la información de gestión.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Trazabilidad histórica</span>
+                </div>
+                <p class="doc-category-text">
+                  Permite un seguimiento continuo de los logros y avances de la Sede en el tiempo, facilitando el
+                  análisis comparativo.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Visualización y búsqueda inteligente</span>
+                </div>
+                <p class="doc-category-text">
+                  Incluye herramientas de visualización dinámica para comparar dependencias y búsqueda semántica para
+                  identificar temáticas específicas en los informes reportados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-prig">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">prig.bogota.unal.edu.co/</div>
+                <span class="stat-chip" style="font-size: 0.68rem;">Gestión Sede</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-prig"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('prig')">
+                <img class="carousel-slide-img active" src="Imágenes/04 PRIG/Inicio.png" alt="Inicio - PRIG">
+                <img class="carousel-slide-img" src="Imágenes/04 PRIG/09 Búsqueda semantica.png"
+                  alt="09 Búsqueda semántica - PRIG">
+                <img class="carousel-slide-img" src="Imágenes/04 PRIG/10 Tableros PRIG.png" alt="10 Tableros - PRIG">
+                <img class="carousel-slide-img" src="Imágenes/04 PRIG/11 Logros por tema.png"
+                  alt="11 Logros por tema - PRIG">
+                <img class="carousel-slide-img" src="Imágenes/04 PRIG/06 PDF TOP.png" alt="06 Reportes TOP - PRIG">
+                <img class="carousel-slide-img" src="Imágenes/04 PRIG/07 PDF Cifras básicas.png"
+                  alt="07 Cifras básicas - PRIG">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-prig">Vista: Inicio PRIG</div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('prig')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-prig" onclick="toggleCarouselPlay('prig')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('prig')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-prig">1 / 6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 7: 5. LA SEDE EN CONTEXTO
+           Texto completo literal del documento + Animación de imágenes
+           ==================================================================== -->
+      <section class="slide" id="slide-7" data-title="5. La Sede en Contexto">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-public">Público • Documentos / Web</span>
+                <span class="stat-chip">Prospectiva</span>
+              </div>
+              <h2 class="tool-main-name">5. La Sede en Contexto</h2>
+              <a class="tool-url-link" href="https://planeacion.bogota.unal.edu.co/sede_en_contexto/" target="_blank">
+                ↗ https://planeacion.bogota.unal.edu.co/sede_en_contexto/
+              </a>
+            </div>
+
+            <p class="tool-doc-intro">
+              Espacio de la Oficina de Planeación y Estadística que ofrece estudios y análisis situados, permitiendo
+              comprender a la Sede y a la Universidad dentro de sus contextos local, regional e institucional con una
+              perspectiva comparativa.
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Análisis situados</span>
+                </div>
+                <p class="doc-category-text">
+                  Provee estudios detallados en temas estratégicos que permiten dimensionar el desempeño institucional
+                  frente al entorno.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Perspectiva comparativa</span>
+                </div>
+                <p class="doc-category-text">
+                  Facilita la comprensión del impacto y evolución de la Sede en relación con variables externas y
+                  referentes institucionales.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Disponibilidad de información</span>
+                </div>
+                <p class="doc-category-text">
+                  Plataforma de consulta abierta donde se publican documentos, estudios de tendencias y análisis
+                  desagregados por facultades.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-contexto">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">planeacion.bogota.unal.edu.co/sede_en_contexto/</div>
+                <span class="stat-chip" style="font-size: 0.68rem;">Estudios</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-contexto"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('contexto')">
+                <img class="carousel-slide-img active" src="Imágenes/05 La Sede en Contexto/01 Inicio.png"
+                  alt="01 Inicio - La Sede en Contexto">
+                <img class="carousel-slide-img" src="Imágenes/05 La Sede en Contexto/04 Representatividad IES.png"
+                  alt="04 Representatividad IES - La Sede en Contexto">
+                <img class="carousel-slide-img" src="Imágenes/05 La Sede en Contexto/04 Crecimiento de matriculados.png"
+                  alt="04 Crecimiento de matriculados - La Sede en Contexto">
+                <img class="carousel-slide-img" src="Imágenes/05 La Sede en Contexto/02 Portada.png"
+                  alt="02 Portada - La Sede en Contexto">
+                <img class="carousel-slide-img" src="Imágenes/05 La Sede en Contexto/03 Contenido.png"
+                  alt="03 Contenido - La Sede en Contexto">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-contexto">Vista: 01 Inicio Contexto</div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('contexto')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-contexto" onclick="toggleCarouselPlay('contexto')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('contexto')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-contexto">1 / 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 8: 6. DATABOT
+           Texto completo literal del documento + Animación de imagen + Simulador
+           ==================================================================== -->
+      <section class="slide" id="slide-8" data-title="6. Databot">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-ai">Institucional • Sistema Conversacional</span>
+                <span class="stat-chip" style="color:#c4b5fd;">Inteligencia Artificial</span>
+              </div>
+              <h2 class="tool-main-name">6. Databot</h2>
+            </div>
+
+            <p class="tool-doc-intro">
+              El Databot representa la frontera de innovación en la interacción con la información institucional,
+              integrando capacidades de inteligencia artificial conversacional al ecosistema de la OPE. Su propósito
+              principal es permitir a la comunidad universitaria y a los gestores de planeación realizar consultas
+              directas en lenguaje natural sobre las bases de datos, estadísticas e informes de la Sede.
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Interacción en Lenguaje Natural</span>
+                </div>
+                <p class="doc-category-text">
+                  Los usuarios pueden formular preguntas directas (ej. "¿Cuál fue el total de graduados de maestría en
+                  2024?" o "¿Cual es facultad que más ha incrementado su número de matriculados en los últimos 5 años?")
+                  sin necesidad de dominar herramientas de BI o SQL.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Conexión con la Base Institucional</span>
+                </div>
+                <p class="doc-category-text">
+                  Consulta y sintetiza información proveniente de los diferentes repositorios y tableros del ecosistema
+                  de analítica.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Democratización de la Información</span>
+                </div>
+                <p class="doc-category-text">
+                  Agiliza la preparación de insumos, reportes y diagnósticos al eliminar barreras técnicas de consulta.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Generación de Visualizaciones</span>
+                </div>
+                <p class="doc-category-text">
+                  Además de la respuesta textual, la herramienta genera gráficos comparativos que complementan la
+                  información y facilitan la interpretación de los resultados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-databot" style="border-color: rgba(139, 92, 246, 0.4);">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">databot.ope.unal.edu.co/</div>
+                <span class="stat-chip" style="font-size: 0.68rem; color:#c4b5fd;">AI Core</span>
+              </div>
+
+              <!-- Pestañas de modo: Captura vs Simulador -->
+              <div class="mockup-tabs" style="border-top:none; border-bottom:1px solid rgba(255,255,255,0.06);">
+                <button class="mockup-tab-btn active" id="btn-tab-dbimg" onclick="switchDatabotView('img')">Captura Real
+                  Databot</button>
+                <button class="mockup-tab-btn" id="btn-tab-dbsim" onclick="switchDatabotView('sim')">⚡ Simulador en
+                  Vivo</button>
+              </div>
+
+              <!-- Vista 1: Captura Real -->
+              <div id="databot-view-img" class="carousel-view-screen"
+                onclick="openLightboxDirect('Imágenes/06 Databot/Databot.jpeg', 'Databot - Asistente Conversacional')">
+                <img class="carousel-slide-img active" src="Imágenes/06 Databot/Databot.jpeg"
+                  alt="Databot IA - Interfaz Real">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <!-- Vista 2: Simulador interactivo en vivo -->
+              <div id="databot-view-sim"
+                style="display:none; height:380px; padding:1rem; flex-direction:column; justify-content:space-between; background:#ffffff; border-top:1px solid var(--border-card); overflow-y:auto;">
+                <div class="simulator-chat" id="simulator-chat" style="max-height: 250px;">
+                  <div class="chat-bubble chat-bot">
+                    👋 <strong>Databot OPE:</strong> Formula preguntas en lenguaje natural sobre aspirantes, matrícula,
+                    deserción o finanzas.
+                  </div>
+                </div>
+                <div class="simulator-prompts">
+                  <button class="prompt-chip" onclick="simulateQuery(1)">
+                    <span>💬 ¿Total graduados de maestría 2024?</span>
+                    <span>→</span>
+                  </button>
+                  <button class="prompt-chip" onclick="simulateQuery(2)">
+                    <span>💬 ¿Facultad que más incrementó matriculados?</span>
+                    <span>→</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info">Interfaz de Inteligencia Artificial Conversacional</div>
+                <div class="carousel-actions-wrap">
+                  <button class="btn-icon-action" style="height:26px; font-size:0.72rem;"
+                    onclick="switchDatabotView(databotCurrentView === 'img' ? 'sim' : 'img')">
+                    Alternar Vista
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 9: TABLA COMPARATIVA & VALOR ESTRATÉGICO INSTITUCIONAL
+           Textos literales completos del documento base
+           ==================================================================== -->
+      <section class="slide" id="slide-9" data-title="Valor Estratégico e Impacto">
+        <div class="slide-summary-layout">
+          <div class="slide-header" style="margin-bottom: 0.5rem;">
+            <span class="slide-tag">Síntesis y Cierre</span>
+            <h2 class="slide-title">Valor Estratégico e <span class="highlight">Impacto Institucional</span></h2>
+            <p class="slide-subtitle">Resumen articulado de las herramientas y los cuatro pilares de transformación
+              institucional.</p>
+          </div>
+
+          <!-- Los 4 Pilares de Impacto Literales -->
+          <div class="impact-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-card-title">
+                <span style="color: var(--unal-green);">01.</span> Transformar datos dispersos en decisiones
+                estratégicas
+              </div>
+              <p class="pillar-card-desc">
+                Reducir la fragmentación de la información administrativa y académica para basar la planificación en
+                evidencia técnica.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-card-title">
+                <span style="color: var(--unal-green);">02.</span> Promover la cultura del autoservicio de datos
+              </div>
+              <p class="pillar-card-desc">
+                Capacitar a las facultades y dependencias para explotar sus propios datos mediante tableros e interfaces
+                ágiles.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-card-title">
+                <span style="color: var(--unal-green);">03.</span> Fortalecer la transparencia y el control social
+              </div>
+              <p class="pillar-card-desc">
+                Poner a disposición de la ciudadanía de forma clara, accesible e interactiva los informes de gestión y
+                las cifras institucionales.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-card-title">
+                <span style="color: var(--unal-green);">04.</span> Incorporar tecnología de vanguardia
+              </div>
+              <p class="pillar-card-desc">
+                Aplicar analítica predictiva e inteligencia artificial para anticipar problemáticas como la deserción
+                estudiantil y optimizar la administración pública universitaria.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Barra Dock Flotante de Navegación -->
+    <nav class="presentation-dock" id="presentation-dock">
+      <button class="dock-nav-btn" id="dock-btn-prev" title="Anterior (Flecha Izquierda)" onclick="prevSlide()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+
+      <!-- Indicadores de Slide en cápsula para 9 slides -->
+      <div class="dock-indicators" id="dock-indicators">
+        <div class="dock-dot active" onclick="goToSlide(1)" title="1. Portada"></div>
+        <div class="dock-dot" onclick="goToSlide(2)" title="2. Panorama General"></div>
+        <div class="dock-dot" onclick="goToSlide(3)" title="3. La Sede en Cifras"></div>
+        <div class="dock-dot" onclick="goToSlide(4)" title="4. Indicadores Estratégicos"></div>
+        <div class="dock-dot" onclick="goToSlide(5)" title="5. OPEData"></div>
+        <div class="dock-dot" onclick="goToSlide(6)" title="6. PRIG"></div>
+        <div class="dock-dot" onclick="goToSlide(7)" title="7. La Sede en Contexto"></div>
+        <div class="dock-dot" onclick="goToSlide(8)" title="8. Databot"></div>
+        <div class="dock-dot" onclick="goToSlide(9)" title="9. Valor Estratégico"></div>
+      </div>
+
+      <div class="dock-counter">
+        <span id="slide-num">1</span> / 9
+      </div>
+
+      <button class="dock-nav-btn" id="dock-btn-next" title="Siguiente (Flecha Derecha / Espacio)"
+        onclick="nextSlide()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
+
+      <div class="dock-keys-hint">
+        <span class="key-badge">←</span>
+        <span class="key-badge">→</span>
+        <span class="key-badge">F</span>
+      </div>
+    </nav>
+  </main>
+
+  <!-- ==========================================================================
+       MODO EXECUTIVE HUB (DASHBOARD DE CENTRO INTERACTIVO CONSERVADO)
+       ========================================================================== -->
+  <section id="dashboard-viewport" class="dashboard-viewport">
+    <div class="dashboard-header">
+      <div>
+        <span class="slide-tag">Catálogo Ejecutivo</span>
+        <h2 class="slide-title">Centro de <span class="highlight">Herramientas OPE</span></h2>
+        <p class="slide-subtitle">Exploración detallada de las seis plataformas con fichas técnicas, enlaces oficiales y
+          capturas de alta definición.</p>
+      </div>
+
+      <div class="dashboard-filter-group">
+        <button class="filter-btn active" onclick="filterDashboard('all', this)">Todas (6)</button>
+        <button class="filter-btn" onclick="filterDashboard('public', this)">Acceso Público (5)</button>
+        <button class="filter-btn" onclick="filterDashboard('internal', this)">Acceso Interno (1)</button>
+        <button class="filter-btn" onclick="filterDashboard('ai', this)">IA Institucional (2)</button>
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
+
+      <!-- 1. La Sede en Cifras -->
+      <div class="hub-tool-card" data-category="public">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/01 Sede en Cifras/01 Inicio.png', 'La Sede en Cifras - Inicio')">
+          <img src="Imágenes/01 Sede en Cifras/01 Inicio.png" alt="La Sede en Cifras">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-public">Tableros de Cifras Públicas</span>
+          </div>
+          <h3 class="hub-card-title">1. La Sede en Cifras</h3>
+          <p class="hub-card-desc">
+            Consulta abierta y análisis profundo de datos institucionales estructurado en 5 categorías fundamentales:
+          </p>
+          <ul class="hub-features-list">
+            <li>Académicos (12): Matrícula, deserción, admisiones, PEAMA.</li>
+            <li>Investigación & Extensión (8): Revistas, grupos y semilleros.</li>
+            <li>Distrito Capital (4): Presencia e impacto local.</li>
+            <li>Bienestar & Gestión (10): GFSE, salud, georreferenciación.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <a class="hub-portal-btn" href="https://planeacion.bogota.unal.edu.co/sede_en_cifras/" target="_blank">
+            Ir al Portal <span>→</span>
+          </a>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/01 Sede en Cifras/02 Tablero Matriculados.png', 'La Sede en Cifras - Tablero Matriculados')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Indicadores Estratégicos -->
+      <div class="hub-tool-card" data-category="public">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/02 Indicadores estratégicos/02 Estudiantes por docente.png', 'Indicadores Estratégicos - Estudiantes por Docente')">
+          <img src="Imágenes/02 Indicadores estratégicos/02 Estudiantes por docente.png" alt="Indicadores Estratégicos">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-public">Cifras cruzadas públicas</span>
+          </div>
+          <h3 class="hub-card-title">2. Indicadores Estratégicos</h3>
+          <p class="hub-card-desc">
+            Suite analítica para directivos que correlaciona variables críticas para la toma de decisiones:
+          </p>
+          <ul class="hub-features-list">
+            <li>Académicos (16): Deserción SPADIES/SIA, permanencia y absorción.</li>
+            <li>Docentes (3): Cualificación doctoral y movilidad docente.</li>
+            <li>Bienestar (7): Alcance de apoyos socioeconómicos y salud.</li>
+            <li>Género (5): Paridad en aspirantes, matriculados y directivos.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <a class="hub-portal-btn" href="https://planeacion.bogota.unal.edu.co/indicadores/" target="_blank">
+            Ir al Portal <span>→</span>
+          </a>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/02 Indicadores estratégicos/01 Inicio.png', 'Indicadores Estratégicos - Vista General')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. OPEData -->
+      <div class="hub-tool-card" data-category="internal">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/03 OPEData/06 Resumen financiero.png', 'OPEData - Resumen Financiero y Contratos')">
+          <img src="Imágenes/03 OPEData/06 Resumen financiero.png" alt="OPEData Resumen Financiero">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-internal">Analítica interna</span>
+          </div>
+          <h3 class="hub-card-title">3. OPEData</h3>
+          <p class="hub-card-desc">
+            Núcleo estratégico de inteligencia interna y seguimiento a la planeación universitaria:
+          </p>
+          <ul class="hub-features-list">
+            <li>Seguimiento a proyectos y ejecución detallada de contratos.</li>
+            <li>Monitoreo de trayectorias estudiantiles y riesgos académicos.</li>
+            <li>Demografía y modalidades del personal administrativo.</li>
+            <li>Entorno de pruebas (Sandbox) para nuevos tableros.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <a class="hub-portal-btn" href="https://opedata.unal.edu.co/" target="_blank">
+            Ir al Portal <span>→</span>
+          </a>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/03 OPEData/05 Tableros financieros.png', 'OPEData - Tableros Financieros')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 4. PRIG -->
+      <div class="hub-tool-card" data-category="public ai">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/04 PRIG/09 Búsqueda semantica.png', 'PRIG - Búsqueda Semántica de Logros')">
+          <img src="Imágenes/04 PRIG/09 Búsqueda semantica.png" alt="PRIG Búsqueda Semántica">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-public">Logros y Cifras de Gestión</span>
+          </div>
+          <h3 class="hub-card-title">4. PRIG</h3>
+          <p class="hub-card-desc">
+            Sistematización del reporte anual de dependencias para Informes de Gestión y Rendición de Cuentas:
+          </p>
+          <ul class="hub-features-list">
+            <li>Registro y consolidación centralizada por dependencia.</li>
+            <li>Generación automática de boletines institucionales.</li>
+            <li>Búsqueda semántica para localizar logros y temáticas.</li>
+            <li>Trazabilidad histórica multi-anual de avances y mejoras.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <a class="hub-portal-btn" href="https://prig.bogota.unal.edu.co/" target="_blank">
+            Ir al Portal <span>→</span>
+          </a>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/04 PRIG/11 Logros por tema.png', 'PRIG - Logros por Tema')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 5. La Sede en Contexto -->
+      <div class="hub-tool-card" data-category="public">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/05 La Sede en Contexto/04 Representatividad IES.png', 'La Sede en Contexto - Representatividad')">
+          <img src="Imágenes/05 La Sede en Contexto/04 Representatividad IES.png" alt="La Sede en Contexto">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-public">Estudios estratégicos</span>
+          </div>
+          <h3 class="hub-card-title">5. La Sede en Contexto</h3>
+          <p class="hub-card-desc">
+            Estudios situados y comparativos que sitúan a la Sede Bogotá en el panorama local, nacional y regional:
+          </p>
+          <ul class="hub-features-list">
+            <li>Análisis de entorno y representatividad frente a otras IES.</li>
+            <li>Evolución de matriculados y tendencias de absorción.</li>
+            <li>Documentos de análisis desagregados por facultades.</li>
+            <li>Plataforma de consulta y divulgación abierta.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <a class="hub-portal-btn" href="https://planeacion.bogota.unal.edu.co/sede_en_contexto/" target="_blank">
+            Ir al Portal <span>→</span>
+          </a>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/05 La Sede en Contexto/01 Inicio.png', 'La Sede en Contexto - Inicio')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 6. Databot -->
+      <div class="hub-tool-card" data-category="public ai" style="border-color: rgba(139, 92, 246, 0.4);">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/06 Databot/Databot.jpeg', 'Databot - Asistente IA Conversacional')">
+          <img src="Imágenes/06 Databot/Databot.jpeg" alt="Databot IA">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-ai">Chatbot de datos</span>
+          </div>
+          <h3 class="hub-card-title">6. Databot (Asistente IA)</h3>
+          <p class="hub-card-desc">
+            Frontera de innovación que conecta la base estadística de la Sede con IA generativa conversacional:
+          </p>
+          <ul class="hub-features-list">
+            <li>Interacción en lenguaje natural sin requerir SQL o BI.</li>
+            <li>Conexión integral con repositorios y tableros del ecosistema.</li>
+            <li>Generación automática de gráficos y tablas analíticas.</li>
+            <li>Democratización absoluta del acceso a la evidencia.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <button class="hub-portal-btn" style="background:none; border:none; cursor:pointer;"
+            onclick="toggleMode('slides'); goToSlide(8);">
+            Ir a Diapositiva <span>→</span>
+          </button>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/06 Databot/Databot.jpeg', 'Databot - Pantalla Completa')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODAL LIGHTBOX (ZOOM EN ALTA RESOLUCIÓN)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightbox-modal" onclick="closeLightbox(event)">
+    <button class="lightbox-close-btn" onclick="closeLightbox()" title="Cerrar (Esc)">✕</button>
+    <div class="lightbox-img-wrapper" onclick="event.stopPropagation()">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Captura ampliada">
+    </div>
+    <div id="lightbox-caption" class="lightbox-caption">Captura de pantalla</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

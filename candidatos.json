@@ -1,0 +1,70 @@
+{
+    "packageName": "Preguntas quiz candidatos decanos 2026.docx",
+    "questions": [
+        {
+            "pregunta": "El promedio de estudiantes por docente en los programas de pregrado y posgrado en la Sede Bogotá para el periodo 2025-2 fue de 15.4. ¿Qué facultad tiene el índice más alto, con 33 estudiantes por profesor?",
+            "tipo_pregunta": "multiple_choice",
+            "opciones": {
+                "a": "Ciencias Económicas",
+                "b": "Ingeniería",
+                "c": "Artes",
+                "d": "Medicina"
+            },
+            "respuesta_correcta": "a",
+            "dificultad": "Medio",
+            "categoria": "Indicadores Académicos"
+        },
+        {
+            "pregunta": "En 2017-2 el porcentaje de docentes con título de doctorado en la Sede Bogotá era de 46,6% en 2025 – 2 es de:",
+            "tipo_pregunta": "multiple_choice",
+            "opciones": {
+                "a": "50,0%",
+                "b": "52,3%",
+                "c": "58,7%",
+                "d": "65,4%"
+            },
+            "respuesta_correcta": "c",
+            "dificultad": "Medio",
+            "categoria": "Indicadores Académicos"
+        },
+        {
+            "pregunta": "La Sede Bogotá cuenta con una amplia oferta de posgrados. ¿Cuántos programas de maestría se ofrecen actualmente en la Sede Bogotá?",
+            "tipo_pregunta": "multiple_choice",
+            "opciones": {
+                "a": "85",
+                "b": "102",
+                "c": "115",
+                "d": "130"
+            },
+            "respuesta_correcta": "b",
+            "dificultad": "Fácil",
+            "categoria": "Oferta Académica"
+        },
+        {
+            "pregunta": "La tasa de deserción es un indicador crítico de gestión. Para el periodo 2025-2 la tasa de deserción en pregrado en la Sede Bogotá fue 5,1%. ¿Qué facultad presenta el más bajo índice?",
+            "tipo_pregunta": "multiple_choice",
+            "opciones": {
+                "a": "Artes con 3,3%",
+                "b": "Ingeniería con 4.1%",
+                "c": "Medicina Veterinaria y de Zootenia con 4,8%",
+                "d": "Medicina con 2,7%"
+            },
+            "respuesta_correcta": "a",
+            "dificultad": "Difícil",
+            "categoria": "Indicadores de Gestión"
+        },
+        {
+            "pregunta": "En 2016 el promedio de semestres de permanencia hasta la graduación de pregrado para la Sede Bogotá era de 11,3 semestres. Para 2025 es:[cite: 1]",
+            "tipo_pregunta": "multiple_choice",
+            "opciones": {
+                "a": "10,5",
+                "b": "11,8",
+                "c": "12,5",
+                "d": "13,1"
+            },
+            "respuesta_correcta": "c",
+            "dificultad": "Medio",
+            "categoria": "Indicadores Académicos"
+        }
+    ]
+}
