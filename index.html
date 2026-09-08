@@ -968,17 +968,24 @@
 
               <!-- Pestañas de modo: Captura vs Simulador -->
               <div class="mockup-tabs" style="border-top:none; border-bottom:1px solid rgba(255,255,255,0.06);">
-                <button class="mockup-tab-btn active" id="btn-tab-dbimg" onclick="switchDatabotView('img')">Captura Real
-                  Databot</button>
-                <button class="mockup-tab-btn" id="btn-tab-dbsim" onclick="switchDatabotView('sim')">⚡ Simulador en
-                  Vivo</button>
+                <button class="mockup-tab-btn active" id="btn-tab-dbimg" onclick="switchDatabotView('img')">Capturas Reales Databot</button>
+                <button class="mockup-tab-btn" id="btn-tab-dbsim" onclick="switchDatabotView('sim')">⚡ Simulador en Vivo</button>
               </div>
 
-              <!-- Vista 1: Captura Real -->
+              <!-- Barra de progreso de animación automática -->
+              <div class="carousel-time-bar-bg" id="cbar-wrap-databot">
+                <div class="carousel-time-bar-fill" id="cbar-databot"></div>
+              </div>
+
+              <!-- Vista 1: Carrusel de Capturas Reales -->
               <div id="databot-view-img" class="carousel-view-screen"
-                onclick="openLightboxDirect('Imágenes/06 Databot/Databot.jpeg', 'Databot - Asistente Conversacional')">
-                <img class="carousel-slide-img active" src="Imágenes/06 Databot/Databot.jpeg"
-                  alt="Databot IA - Interfaz Real">
+                onclick="openActiveCarouselLightbox('databot')">
+                <img class="carousel-slide-img active" src="Imágenes/06 Databot/01 Databot inicio.jpeg"
+                  alt="01 Databot Inicio - Asistente Conversacional">
+                <img class="carousel-slide-img" src="Imágenes/06 Databot/02 Grafico databot.jpeg"
+                  alt="02 Gráfico Databot - Visualización Generada">
+                <img class="carousel-slide-img" src="Imágenes/06 Databot/03 Preguntas frecuentes.jpeg"
+                  alt="03 Preguntas Frecuentes - Databot">
                 <div class="mockup-overlay-btn">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8" />
@@ -1012,9 +1019,14 @@
               </div>
 
               <div class="carousel-controls-bar">
-                <div class="carousel-caption-info">Interfaz de Inteligencia Artificial Conversacional</div>
+                <div class="carousel-caption-info" id="ccap-databot">Vista: 01 Inicio - Asistente Conversacional Databot</div>
                 <div class="carousel-actions-wrap">
-                  <button class="btn-icon-action" style="height:26px; font-size:0.72rem;"
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('databot')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-databot" onclick="toggleCarouselPlay('databot')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('databot')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-databot">1 / 3</span>
+                  <button class="btn-icon-action" style="height:26px; font-size:0.72rem; margin-left:6px;"
                     onclick="switchDatabotView(databotCurrentView === 'img' ? 'sim' : 'img')">
                     Alternar Vista
                   </button>
@@ -1311,8 +1323,8 @@
       <!-- 6. Databot -->
       <div class="hub-tool-card" data-category="public ai" style="border-color: rgba(139, 92, 246, 0.4);">
         <div class="hub-card-media"
-          onclick="openLightboxDirect('Imágenes/06 Databot/Databot.jpeg', 'Databot - Asistente IA Conversacional')">
-          <img src="Imágenes/06 Databot/Databot.jpeg" alt="Databot IA">
+          onclick="openLightboxDirect('Imágenes/06 Databot/01 Databot inicio.jpeg', 'Databot - Asistente IA Conversacional')">
+          <img src="Imágenes/06 Databot/01 Databot inicio.jpeg" alt="Databot IA">
         </div>
         <div class="hub-card-body">
           <div class="hub-card-tags">
@@ -1335,7 +1347,7 @@
             Ir a Diapositiva <span>→</span>
           </button>
           <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
-            onclick="openLightboxDirect('Imágenes/06 Databot/Databot.jpeg', 'Databot - Pantalla Completa')">
+            onclick="openLightboxDirect('Imágenes/06 Databot/01 Databot inicio.jpeg', 'Databot - Pantalla Completa')">
             Ver Capturas
           </button>
         </div>

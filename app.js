@@ -86,6 +86,20 @@ const carouselsData = {
       { src: 'Imágenes/05 La Sede en Contexto/02 Portada.png', caption: '04 Portada de Publicaciones y Documentos' },
       { src: 'Imágenes/05 La Sede en Contexto/03 Contenido.png', caption: '05 Análisis Situados y Estudios' }
     ]
+  },
+  databot: {
+    slideIndex: 8,
+    currentIndex: 0,
+    intervalMs: 4500,
+    isPlaying: true,
+    timer: null,
+    progressTimer: null,
+    progressPct: 0,
+    items: [
+      { src: 'Imágenes/06 Databot/01 Databot inicio.jpeg', caption: '01 Inicio - Asistente Conversacional Databot' },
+      { src: 'Imágenes/06 Databot/02 Grafico databot.jpeg', caption: '02 Gráfico Databot - Visualización Generada' },
+      { src: 'Imágenes/06 Databot/03 Preguntas frecuentes.jpeg', caption: '03 Preguntas Frecuentes y Consultas Sugeridas' }
+    ]
   }
 };
 
@@ -181,7 +195,9 @@ function handleCarouselsOnSlideChange() {
   Object.keys(carouselsData).forEach(key => {
     const car = carouselsData[key];
     if (car.slideIndex === currentSlide) {
-      if (car.isPlaying) {
+      if (key === 'databot' && databotCurrentView === 'sim') {
+        stopCarouselAutoPlay(key);
+      } else if (car.isPlaying) {
         startCarouselAutoPlay(key);
       }
     } else {
@@ -309,17 +325,27 @@ function switchDatabotView(view) {
   const simView = document.getElementById('databot-view-sim');
   const btnImg = document.getElementById('btn-tab-dbimg');
   const btnSim = document.getElementById('btn-tab-dbsim');
+  const timeBar = document.getElementById('cbar-wrap-databot');
+  const capEl = document.getElementById('ccap-databot');
 
   if (view === 'sim') {
     imgView.style.display = 'none';
     simView.style.display = 'flex';
     btnSim.classList.add('active');
     btnImg.classList.remove('active');
+    if (timeBar) timeBar.style.display = 'none';
+    if (capEl) capEl.textContent = 'Vista: Simulador Interactivo en Vivo';
+    stopCarouselAutoPlay('databot');
   } else {
     simView.style.display = 'none';
     imgView.style.display = 'block';
     btnImg.classList.add('active');
     btnSim.classList.remove('active');
+    if (timeBar) timeBar.style.display = 'block';
+    updateCarouselView('databot');
+    if (carouselsData.databot && carouselsData.databot.isPlaying && currentSlide === 8) {
+      startCarouselAutoPlay('databot');
+    }
   }
 }
 
