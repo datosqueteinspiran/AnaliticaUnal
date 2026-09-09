@@ -4,7 +4,7 @@
  */
 
 let currentSlide = 1;
-const totalSlides = 9;
+const totalSlides = 16;
 let currentMode = 'slides'; // 'slides' | 'dashboard'
 let databotCurrentView = 'img';
 
@@ -99,6 +99,98 @@ const carouselsData = {
       { src: 'Imágenes/06 Databot/01 Databot inicio.jpeg', caption: '01 Inicio - Asistente Conversacional Databot' },
       { src: 'Imágenes/06 Databot/02 Grafico databot.jpeg', caption: '02 Gráfico Databot - Visualización Generada' },
       { src: 'Imágenes/06 Databot/03 Preguntas frecuentes.jpeg', caption: '03 Preguntas Frecuentes y Consultas Sugeridas' }
+    ]
+  },
+  racionalizacion: {
+    slideIndex: 10,
+    currentIndex: 0,
+    intervalMs: 4500,
+    isPlaying: true,
+    timer: null,
+    progressTimer: null,
+    progressPct: 0,
+    items: [
+      { src: 'Imágenes/k01 Racionalizacion/01 evaluador.PNG', caption: '01 Evaluación para la Priorización - Racionalización' },
+      { src: 'Imágenes/k01 Racionalizacion/02 evaluador.PNG', caption: '02 Análisis de Viabilidad y Criterios' },
+      { src: 'Imágenes/k01 Racionalizacion/03 evaluador.PNG', caption: '03 Evaluación para la Automatización Tecnológica' },
+      { src: 'Imágenes/k01 Racionalizacion/04 Evaluador.PNG', caption: '04 Seguimiento, Control y Reportería de Trámites' },
+      { src: 'Imágenes/k01 Racionalizacion/05 evaluador.PNG', caption: '05 Consolidado General y Fichas por Proceso' }
+    ]
+  },
+  rxd: {
+    slideIndex: 11,
+    currentIndex: 0,
+    intervalMs: 4500,
+    isPlaying: true,
+    timer: null,
+    progressTimer: null,
+    progressPct: 0,
+    items: [
+      { src: 'Imágenes/k02 Revisión por la dirección/01 rxd.PNG', caption: '01 Evaluaciones Estructuradas del SGC' },
+      { src: 'Imágenes/k02 Revisión por la dirección/02 rxd.PNG', caption: '02 Dashboard Directivo de Desempeño' },
+      { src: 'Imágenes/k02 Revisión por la dirección/03 rxd.PNG', caption: '03 Preservación Histórica de Evaluaciones' },
+      { src: 'Imágenes/k02 Revisión por la dirección/04 rxd.PNG', caption: '04 Benchmarking Interno y Tendencias' }
+    ]
+  },
+  tickets: {
+    slideIndex: 12,
+    currentIndex: 0,
+    intervalMs: 4500,
+    isPlaying: true,
+    timer: null,
+    progressTimer: null,
+    progressPct: 0,
+    items: [
+      { src: 'Imágenes/k03 TicketsUnal/01 inicio tickets UNAL.PNG', caption: '01 Inicio - Portal Tickets UNAL' },
+      { src: 'Imágenes/k03 TicketsUnal/02 historial tickets UNAL.PNG', caption: '02 Historial y Trazabilidad de Tickets' }
+    ]
+  },
+  avanza: {
+    slideIndex: 13,
+    currentIndex: 0,
+    intervalMs: 4500,
+    isPlaying: true,
+    timer: null,
+    progressTimer: null,
+    progressPct: 0,
+    items: [
+      { src: 'Imágenes/k04 Avanza/01 avanza.PNG', caption: '01 Inicio y Dashboard de Proyectos - Avanza' },
+      { src: 'Imágenes/k04 Avanza/02 avanza.PNG', caption: '02 Planificación y Estructura de Trabajo' },
+      { src: 'Imágenes/k04 Avanza/03 avanza.PNG', caption: '03 Cronograma y Monitoreo de Hitos' }
+    ]
+  },
+  acuerdos: {
+    slideIndex: 14,
+    currentIndex: 0,
+    intervalMs: 4500,
+    isPlaying: true,
+    timer: null,
+    progressTimer: null,
+    progressPct: 0,
+    items: [
+      { src: 'Imágenes/k05 Acuerdos de pago/1.png', caption: '01 Portal Principal - Acuerdos de Pago' },
+      { src: 'Imágenes/k05 Acuerdos de pago/2.png', caption: '02 Solicitud y Registro de Deudor' },
+      { src: 'Imágenes/k05 Acuerdos de pago/3.png', caption: '03 Formulario y Condiciones de Pago' },
+      { src: 'Imágenes/k05 Acuerdos de pago/4.png', caption: '04 Plan de Cuotas y Trazabilidad' },
+      { src: 'Imágenes/k05 Acuerdos de pago/5.png', caption: '05 Flujo de Aprobación Institucional' },
+      { src: 'Imágenes/k05 Acuerdos de pago/6.png', caption: '06 Consulta de Estado y Certificados' },
+      { src: 'Imágenes/k05 Acuerdos de pago/7.png', caption: '07 Reportes y Consolidado Financiero' }
+    ]
+  },
+  revision: {
+    slideIndex: 15,
+    currentIndex: 0,
+    intervalMs: 4500,
+    isPlaying: true,
+    timer: null,
+    progressTimer: null,
+    progressPct: 0,
+    items: [
+      { src: 'Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.36.00 PM.jpeg', caption: '01 Interfaz Conversacional de Consulta' },
+      { src: 'Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.36.51 PM.jpeg', caption: '02 Búsqueda Directa de Protocolos y Guías' },
+      { src: 'Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.37.31 PM.jpeg', caption: '03 Respuestas con Enlace Oficial Directo' },
+      { src: 'Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.39.22 PM.jpeg', caption: '04 Panel de Administración Descentralizado' },
+      { src: 'Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.41.30 PM.jpeg', caption: '05 Carga y Gestión de Documentos Curados' }
     ]
   }
 };

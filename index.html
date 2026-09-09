@@ -36,7 +36,7 @@
 
     <div id="section-menu-middle">
       <div class="padded-container">
-        <p id="name-aplication">Ecosistema de Analítica Institucional | Sede Bogotá</p>
+        <p id="name-aplication">Analítica, Calidad y Gestión| Sede Bogotá</p>
       </div>
 
       <div class="header-actions">
@@ -50,14 +50,14 @@
             </svg>
             Presentación
           </button>
-          <button id="btn-mode-dashboard" class="mode-btn" title="Modo Executive Hub">
+          <button id="btn-mode-dashboard" class="mode-btn" title="Resumen">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="3" y="3" width="7" height="7" />
               <rect x="14" y="3" width="7" height="7" />
               <rect x="14" y="14" width="7" height="7" />
               <rect x="3" y="14" width="7" height="7" />
             </svg>
-            Executive Hub
+            Resumen
           </button>
         </div>
 
@@ -80,48 +80,61 @@
     <div class="slides-wrapper">
 
       <!-- ====================================================================
-           SLIDE 1: PORTADA SOLA
-           Frase: Ecosistema de Analítica Institucional de la Sede Bogotá
-           Texto: Oficina de Planeación y Estadística - OPE
-           Logo oficial UNAL
+           SLIDE 1: PORTADA PRINCIPAL OPE
+           Solo nombre de la OPE y 2 botones: Ecosistema y Hub
            ==================================================================== -->
-      <section class="slide active" id="slide-1" data-title="Portada Institucional">
-        <div class="slide-cover">
+      <section class="slide active" id="slide-1" data-title="Portada OPE">
+        <div class="slide-cover" style="gap: 2.5rem; justify-content: center; align-items: center; text-align: center;">
           <div class="cover-logo-wrapper">
-            <div class="cover-institution-title">Universidad Nacional de Colombia</div>
-            <img src="Logo_OPE_Negro_01.png" alt="Oficina de Planeación y Estadística - OPE Sede Bogotá"
-              class="cover-ope-logo"
+            <div class="cover-institution-title"
+              style="font-size: 1.15rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); font-weight: 600;">
+              Universidad Nacional de Colombia • Sede Bogotá
+            </div>
+            <img src="Logo_OPE_Negro_01.png" alt="Oficina de Planeación y Estadística - OPE" class="cover-ope-logo"
+              style="max-height: 110px; margin-top: 0.5rem;"
               onerror="this.onerror=null; this.src='https://github.com/datosqueteinspiran/LogoOPE/blob/main/Logo_OPE_Negro_01.png?raw=true'">
           </div>
 
-          <h1 class="cover-main-phrase">
-            <span class="text-highlight">Ecosistema de Analítica Institucional</span><br>
-            de la Sede Bogotá
+          <h1 class="cover-main-phrase"
+            style="font-size: 2.4rem; font-weight: 800; color: var(--text-primary); margin: 0;">
+            Analítica, Calidad y Gestión Institucional para la Sede Bogotá
           </h1>
 
-          <div class="cover-ope-pill">
+          <div class="cover-ope-pill" style="margin-top: -0.5rem;">
             <span class="unal-dot"></span>
             <div class="cover-ope-text">
-              Oficina de Planeación y Estadística — <strong>OPE</strong>
+              Plataforma Institucional de Inteligencia, Datos y Gestión
             </div>
           </div>
 
-          <button class="cover-btn-start" onclick="goToSlide(2)">
-            Ver Herramientas del Ecosistema
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="9 18 15 12 9 6" />
-            </svg>
-          </button>
+          <!-- Dos botones principales -->
+          <div class="cover-buttons-group"
+            style="display: flex; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 0.5rem;">
+            <button class="cover-btn-start" onclick="goToSlide(2)"
+              style="padding: 0.95rem 2rem; font-size: 1.05rem; background: var(--unal-green); color: white; border: none; border-radius: 50px; cursor: pointer; display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 700; transition: all 0.25s ease; box-shadow: 0 4px 16px var(--unal-green-glow);">
+              <span>Ecosistema de Analítica</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+            <button class="cover-btn-start" onclick="goToSlide(9)"
+              style="padding: 0.95rem 2rem; font-size: 1.05rem; background: #4f46e5; color: white; border: none; border-radius: 50px; cursor: pointer; display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 700; transition: all 0.25s ease; box-shadow: 0 4px 16px rgba(79, 70, 229, 0.3);">
+              <span>Hub de Calidad y Gestión</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- ====================================================================
-           SLIDE 2: PANORAMA DE TODAS LAS HERRAMIENTAS
-           Con algo muy distintivo de cada herramienta
+           SLIDE 2: PANORAMA - ECOSISTEMA DE ANALÍTICA
            ==================================================================== -->
-      <section class="slide" id="slide-2" data-title="Panorama de Herramientas">
+      <section class="slide" id="slide-2" data-title="Panorama Ecosistema de Analítica">
         <div class="slide-overview">
           <div class="slide-header" style="margin-bottom: 0.75rem;">
+            <span class="slide-tag">Ecosistema de Analítica</span>
             <h2 class="slide-title">Las 6 Herramientas de <span class="highlight">Inteligencia y Datos</span></h2>
             <p class="slide-subtitle">Una suite articulada para la toma de decisiones basada en datos en la Sede Bogotá.
             </p>
@@ -130,7 +143,7 @@
           <div class="overview-grid">
             <!-- 1. Sede en Cifras -->
             <div class="overview-card" onclick="goToSlide(3)">
-              <h3 class="overview-tool-title">La Sede en Cifras</h3>
+              <h3 class="overview-tool-title">1. La Sede en Cifras</h3>
               <p class="overview-card-desc">
                 Tableros detallados de las principales cifras de la Sede con acceso público.
               </p>
@@ -151,7 +164,7 @@
 
             <!-- 2. Indicadores Estratégicos -->
             <div class="overview-card" onclick="goToSlide(4)">
-              <h3 class="overview-tool-title">Indicadores Estratégicos</h3>
+              <h3 class="overview-tool-title">2. Indicadores Estratégicos</h3>
               <p class="overview-card-desc">
                 Información cruzada de las principales cifras de la Sede.
               </p>
@@ -172,7 +185,7 @@
 
             <!-- 3. OPEData -->
             <div class="overview-card" onclick="goToSlide(5)">
-              <h3 class="overview-tool-title">OPEData</h3>
+              <h3 class="overview-tool-title">3. OPEData</h3>
               <p class="overview-card-desc">
                 Tableros de análisis interno con acceso restringido.
               </p>
@@ -193,7 +206,7 @@
 
             <!-- 4. PRIG -->
             <div class="overview-card" onclick="goToSlide(6)">
-              <h3 class="overview-tool-title">PRIG</h3>
+              <h3 class="overview-tool-title">4. PRIG</h3>
               <p class="overview-card-desc">
                 Sistematización de cifras y logros de la gestión anual.
               </p>
@@ -214,7 +227,7 @@
 
             <!-- 5. La Sede en Contexto -->
             <div class="overview-card" onclick="goToSlide(7)">
-              <h3 class="overview-tool-title">La Sede en Contexto</h3>
+              <h3 class="overview-tool-title">5. La Sede en Contexto</h3>
               <p class="overview-card-desc">
                 Estudios estratégicos de la Sede frente a su entorno.
               </p>
@@ -235,7 +248,7 @@
 
             <!-- 6. Databot -->
             <div class="overview-card" onclick="goToSlide(8)">
-              <h3 class="overview-tool-title">Databot</h3>
+              <h3 class="overview-tool-title">6. Databot</h3>
               <p class="overview-card-desc">
                 Chatbot con IA para la consulta de cifras institucionales.
               </p>
@@ -968,8 +981,10 @@
 
               <!-- Pestañas de modo: Captura vs Simulador -->
               <div class="mockup-tabs" style="border-top:none; border-bottom:1px solid rgba(255,255,255,0.06);">
-                <button class="mockup-tab-btn active" id="btn-tab-dbimg" onclick="switchDatabotView('img')">Capturas Reales Databot</button>
-                <button class="mockup-tab-btn" id="btn-tab-dbsim" onclick="switchDatabotView('sim')">⚡ Simulador en Vivo</button>
+                <button class="mockup-tab-btn active" id="btn-tab-dbimg" onclick="switchDatabotView('img')">Capturas
+                  Reales Databot</button>
+                <button class="mockup-tab-btn" id="btn-tab-dbsim" onclick="switchDatabotView('sim')">⚡ Simulador en
+                  Vivo</button>
               </div>
 
               <!-- Barra de progreso de animación automática -->
@@ -978,8 +993,7 @@
               </div>
 
               <!-- Vista 1: Carrusel de Capturas Reales -->
-              <div id="databot-view-img" class="carousel-view-screen"
-                onclick="openActiveCarouselLightbox('databot')">
+              <div id="databot-view-img" class="carousel-view-screen" onclick="openActiveCarouselLightbox('databot')">
                 <img class="carousel-slide-img active" src="Imágenes/06 Databot/01 Databot inicio.jpeg"
                   alt="01 Databot Inicio - Asistente Conversacional">
                 <img class="carousel-slide-img" src="Imágenes/06 Databot/02 Grafico databot.jpeg"
@@ -1019,7 +1033,8 @@
               </div>
 
               <div class="carousel-controls-bar">
-                <div class="carousel-caption-info" id="ccap-databot">Vista: 01 Inicio - Asistente Conversacional Databot</div>
+                <div class="carousel-caption-info" id="ccap-databot">Vista: 01 Inicio - Asistente Conversacional Databot
+                </div>
                 <div class="carousel-actions-wrap">
                   <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('databot')" title="Anterior">◀</button>
                   <button class="carousel-ctrl-btn" id="cplay-databot" onclick="toggleCarouselPlay('databot')"
@@ -1038,16 +1053,907 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 9: TABLA COMPARATIVA & VALOR ESTRATÉGICO INSTITUCIONAL
-           Textos literales completos del documento base
+           SLIDE 9: PANORAMA - HUB DE CALIDAD Y GESTIÓN
            ==================================================================== -->
-      <section class="slide" id="slide-9" data-title="Valor Estratégico e Impacto">
+      <section class="slide" id="slide-9" data-title="Panorama Hub de Calidad y Gestión">
+        <div class="slide-overview">
+          <div class="slide-header" style="margin-bottom: 0.75rem;">
+            <span class="slide-tag">Hub de Calidad y Gestión</span>
+            <h2 class="slide-title">Las 6 Herramientas de <span class="highlight">Racionalización Operativa</span></h2>
+            <p class="slide-subtitle">Plataformas modulares desarrolladas para optimizar la gestión de trámites,
+              servicios y actividades administrativas
+            </p>
+          </div>
+
+          <div class="overview-grid">
+            <!-- 1. Racionalización de Trámites -->
+            <div class="overview-card" onclick="goToSlide(10)">
+              <h3 class="overview-tool-title">1. Racionalización de Trámites</h3>
+              <p class="overview-card-desc">
+                Diagnóstico, priorización y viabilización de la automatización tecnológica de servicios institucionales.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://script.google.com/macros/s/AKfycbzwfBD8Wsn2uR5E6e8axSvE9W60T52cEBllUk-U-am-lfHcEDmTQf2c9rdnjSER1PPLlA/exec"
+                  target="_blank" rel="noopener noreferrer" class="overview-external-link"
+                  onclick="event.stopPropagation()" title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Función Pública</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 2. Revisión por la Dirección -->
+            <div class="overview-card" onclick="goToSlide(11)">
+              <h3 class="overview-tool-title">2. Revisión por la Dirección</h3>
+              <p class="overview-card-desc">
+                Automatización del ciclo de evaluación directiva del Sistema de Gestión de la Calidad (SGC).
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <span class="overview-external-link" style="color:var(--text-muted); cursor:default;"
+                  onclick="event.stopPropagation()">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                  </svg>
+                  <span>Calidad SGC</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- 3. Tickets UNAL -->
+            <div class="overview-card" onclick="goToSlide(12)">
+              <h3 class="overview-tool-title">3. Tickets UNAL</h3>
+              <p class="overview-card-desc">
+                Gestión centralizada y enrutamiento automático de tickets de trámites e información.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://unal-frontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+                  class="overview-external-link" onclick="event.stopPropagation()"
+                  title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>unal-frontend.onrender.com</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 4. Avanza -->
+            <div class="overview-card" onclick="goToSlide(13)">
+              <h3 class="overview-tool-title">4. Avanza</h3>
+              <p class="overview-card-desc">
+                Gestión estratégica, planificación visual y seguimiento integral de proyectos.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://avanza.unal.edu.co/" target="_blank" rel="noopener noreferrer"
+                  class="overview-external-link" onclick="event.stopPropagation()"
+                  title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>avanza.unal.edu.co/</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 5. Acuerdos de Pago -->
+            <div class="overview-card" onclick="goToSlide(14)">
+              <h3 class="overview-tool-title">5. Acuerdos de Pago</h3>
+              <p class="overview-card-desc">
+                Trámite y seguimiento articulado de compromisos de pago de deudores institucionales.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <a href="https://planeacion.bogota.unal.edu.co/acuerdo_pago/" target="_blank" rel="noopener noreferrer"
+                  class="overview-external-link" onclick="event.stopPropagation()"
+                  title="Abrir enlace oficial en nueva pestaña">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>planeacion.bogota.unal.edu.co/acuerdo_pago/</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 6. Revisión Documental Especializada -->
+            <div class="overview-card" onclick="goToSlide(15)">
+              <h3 class="overview-tool-title">6. Revisión Documental</h3>
+              <p class="overview-card-desc">
+                Consulta conversacional de guías, formatos y normas con enlace oficial directo.
+              </p>
+              <div class="overview-card-footer">
+                <div class="overview-action-link">Explorar herramienta <span>→</span></div>
+                <span class="overview-external-link" style="color:var(--text-muted); cursor:default;"
+                  onclick="event.stopPropagation()">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                  </svg>
+                  <span>IA Normativa · OGA</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 10: 1. RACIONALIZACIÓN DE TRÁMITES (k01 Racionalizacion)
+           ==================================================================== -->
+      <section class="slide" id="slide-10" data-title="1. Racionalización de Trámites">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-private">Privado • Aplicación web</span>
+                <span class="stat-chip">Función Pública</span>
+              </div>
+              <h2 class="tool-main-name">1. Racionalización de Trámites</h2>
+            </div>
+
+            <p class="tool-doc-intro">
+              Plataforma integral diseñada para la gestión, análisis y optimización de trámites y servicios
+              institucionales, alineada estrictamente con la metodología normativa del Departamento Administrativo de la
+              Función Pública. A
+              través de un flujo estructurado en tres escenarios sucesivos y dependientes, la herramienta guía el
+              diagnóstico administrativo hasta su materialización tecnológica, transformando la evaluación operativa en
+              soluciones accionables. Estructurada para gestionar el ciclo completo de intervención a través de 4
+              componentes funcionales:
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Evaluación para la Priorización</span>
+                </div>
+                <p class="doc-category-text">
+                  Mide de forma objetiva criterios clave como la cobertura, el volumen de solicitudes y los niveles de
+                  insatisfacción, permitiendo reconocer y focalizar los esfuerzos en los puntos más urgentes de
+                  intervención institucional.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Análisis de Viabilidad y Priorización</span>
+                </div>
+                <p class="doc-category-text">
+                  Facilita la toma de decisiones al especificar la posibilidad real de intervención, determinando su
+                  tipo (normativo, administrativo o tecnológico) y su viabilidad, habilitando el paso a la siguiente
+                  fase productiva.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Evaluación para la Automatización</span>
+                </div>
+                <p class="doc-category-text">
+                  Aplica un modelo de medición basado en 10 criterios con ponderaciones establecidas por la Función
+                  Pública para intervenciones tecnológicas. Identifica y deriva automáticamente al equipo de desarrollo
+                  aquellos trámites que superan la calificación de 3.8 para la creación de su respectiva solución.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Seguimiento, Control y Reportería</span>
+                </div>
+                <p class="doc-category-text">
+                  Mantiene una línea cronológica detallada de gestión, permitiendo registrar notas y comentarios en cada
+                  trámite. Además, facilita la impresión de fichas particulares para difusión o archivo y genera
+                  gráficos interactivos agrupados por proceso, mostrando el porcentaje de avance en el universo de
+                  trámites evaluados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-racionalizacion">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">script.google.com/macros/s/AKfycbzwf...</div>
+                <a href="https://script.google.com/macros/s/AKfycbzwfBD8Wsn2uR5E6e8axSvE9W60T52cEBllUk-U-am-lfHcEDmTQf2c9rdnjSER1PPLlA/exec"
+                  target="_blank" class="mockup-external-link" title="Abrir enlace oficial">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-racionalizacion"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('racionalizacion')">
+                <img class="carousel-slide-img active" src="Imágenes/k01 Racionalizacion/01 evaluador.PNG"
+                  alt="01 Evaluación para la Priorización - Racionalización">
+                <img class="carousel-slide-img" src="Imágenes/k01 Racionalizacion/02 evaluador.PNG"
+                  alt="02 Análisis de Viabilidad y Criterios">
+                <img class="carousel-slide-img" src="Imágenes/k01 Racionalizacion/03 evaluador.PNG"
+                  alt="03 Evaluación para la Automatización Tecnológica">
+                <img class="carousel-slide-img" src="Imágenes/k01 Racionalizacion/04 Evaluador.PNG"
+                  alt="04 Seguimiento, Control y Reportería de Trámites">
+                <img class="carousel-slide-img" src="Imágenes/k01 Racionalizacion/05 evaluador.PNG"
+                  alt="05 Consolidado General y Fichas por Proceso">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-racionalizacion">Vista: 01 Evaluación para la Priorización -
+                  Racionalización</div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('racionalizacion')"
+                    title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-racionalizacion"
+                    onclick="toggleCarouselPlay('racionalizacion')" title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('racionalizacion')"
+                    title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-racionalizacion">1 / 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 11: 2. REVISIÓN POR LA DIRECCIÓN (k02)
+           ==================================================================== -->
+      <section class="slide" id="slide-11" data-title="2. Revisión por la Dirección">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-private">Privado • Plataforma web</span>
+                <span class="stat-chip">Gestión de Calidad</span>
+              </div>
+              <h2 class="tool-main-name">2. Revisión por la Dirección</h2>
+            </div>
+
+            <p class="tool-doc-intro">
+              Solución digital web modular, ágil y centralizada, diseñada específicamente para automatizar el ciclo
+              completo de la revisión por la Dirección del Sistema de Gestión de la Calidad (SGC). A través de una
+              plataforma que guía a los líderes y gestores de procesos mediante una evaluación estructurada, el sistema
+              transforma la recolección de datos en información ejecutiva lista para la toma de decisiones estratégicas
+              y la formulación de planes de mejora. Estructurada para optimizar el análisis institucional a través de 4
+              grandes componentes funcionales:
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Evaluación Estructurada de Procesos</span>
+                </div>
+                <p class="doc-category-text">
+                  Acompaña y guía de manera metódica a los líderes y gestores durante todo el ciclo de revisión,
+                  garantizando que el ingreso y la evaluación de la información cumplan con los lineamientos del SGC de
+                  forma estandarizada.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Dashboard Directivo de Desempeño</span>
+                </div>
+                <p class="doc-category-text">
+                  Consolida automáticamente los resultados de las evaluaciones para ofrecer una visualización clara y en
+                  tiempo real del estado del sistema. Centraliza los datos para generar reportes ejecutivos precisos,
+                  diseñados especialmente para la alta dirección.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Trazabilidad y Archivo Histórico</span>
+                </div>
+                <p class="doc-category-text">
+                  A través de su Modo Administrador, permite guardar, organizar e historiar todas las evaluaciones en
+                  una base de datos local centralizada. Esto garantiza la preservación de la memoria institucional, la
+                  seguridad de la información y el seguimiento continuo a lo largo del tiempo.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Análisis Comparativo y Detección de Tendencias</span>
+                </div>
+                <p class="doc-category-text">
+                  Facilita la carga de evaluaciones previas pertenecientes a diferentes facultades, sedes o dependencias
+                  para realizar ejercicios de benchmarking interno. Esta herramienta analítica permite identificar
+                  ágilmente qué procesos presentan un desempeño crítico y en qué componentes específicos se deben
+                  concentrar los esfuerzos de mejora.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-rxd">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">planeacion.bogota.unal.edu.co/revision_direccion/</div>
+                <span class="stat-chip" style="font-size: 0.68rem;">Calidad SGC</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-rxd"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('rxd')">
+                <img class="carousel-slide-img active" src="Imágenes/k02 Revisión por la dirección/01 rxd.PNG"
+                  alt="01 Evaluaciones Estructuradas del SGC">
+                <img class="carousel-slide-img" src="Imágenes/k02 Revisión por la dirección/02 rxd.PNG"
+                  alt="02 Dashboard Directivo de Desempeño">
+                <img class="carousel-slide-img" src="Imágenes/k02 Revisión por la dirección/03 rxd.PNG"
+                  alt="03 Preservación Histórica de Evaluaciones">
+                <img class="carousel-slide-img" src="Imágenes/k02 Revisión por la dirección/04 rxd.PNG"
+                  alt="04 Benchmarking Interno y Tendencias">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-rxd">Vista: 01 Evaluaciones Estructuradas del SGC</div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('rxd')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-rxd" onclick="toggleCarouselPlay('rxd')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('rxd')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-rxd">1 / 4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 12: 3. TICKETS UNAL (k03)
+           ==================================================================== -->
+      <section class="slide" id="slide-12" data-title="3. Tickets UNAL">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-private">Privado • Plataforma web</span>
+                <span class="stat-chip">Gestión de Trámites</span>
+              </div>
+              <h2 class="tool-main-name">3. Tickets UNAL</h2>
+            </div>
+
+            <p class="tool-doc-intro">
+              Plataforma institucional No-Code/Low-Code diseñada para unificar, digitalizar y gestionar de forma
+              integral los trámites y servicios de la Universidad Nacional de Colombia. Su objetivo principal es
+              eliminar los silos operativos (uso disperso de correos y Excel) al permitir que cualquier dependencia
+              configure, publique y administre sus propios flujos de trabajo y formularios de manera visual, autónoma y
+              sin necesidad de desarrollo de software, garantizando total trazabilidad en tiempo real.
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Autonomía y Flexibilidad Tecnológica (No-Code / Cero Silos)</span>
+                </div>
+                <p class="doc-category-text">
+                  Esta plataforma descentraliza la creación de servicios al permitir que cualquier gestor diseñe
+                  formularios y flujos de trabajo mediante un sistema visual de 'arrastrar y soltar' (Drag & Drop), sin
+                  necesidad de escribir código. Además, se apoya en una arquitectura unificada (basada en PostgreSQL y
+                  JSONB) que agrupa a múltiples dependencias, otorgando a cada trámite su propio esquema de datos
+                  dinámico sin alterar la base de datos central de la institución.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Trazabilidad Total y Transparencia Operativa</span>
+                </div>
+                <p class="doc-category-text">
+                  Elimina la 'caja negra' administrativa al garantizar que tanto los usuarios como los gestores
+                  visualicen en tiempo real el estado exacto de sus solicitudes a través del Portal de Trámites y el
+                  Panel de Agente. Esta gestión automatizada incluye la emisión de alertas y notificaciones por cada
+                  cambio de estado, lo que elimina la dependencia de la memoria del personal operativo y reduce
+                  significativamente los cuellos de botella.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Gobernanza de Datos y Estandarización Institucional</span>
+                </div>
+                <p class="doc-category-text">
+                  La herramienta asegura una correcta gestión de datos maestros centralizando la información
+                  institucional (ya sea mediante Excel, carga manual o conexión con APIs externas) para que actúe como
+                  una única 'fuente de verdad' que alimenta automáticamente los formularios. Asimismo, garantiza la
+                  estandarización mediante una Ficha de Trámite que ofrece a los usuarios una presentación estructurada
+                  y transparente de los servicios (detallando tiempos, costos, canales de soporte y macroproceso
+                  asociado) previamente a la radicación.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Seguridad Estructural y Escalabilidad a Futuro</span>
+                </div>
+                <p class="doc-category-text">
+                  El sistema protege la información mediante un control de acceso jerárquico (IAM y Zero-Trust) que
+                  refleja la estructura real de la universidad (Institución > Sede > Espacio de Trabajo), definiendo
+                  permisos y roles estrictos que van desde el Súper Administrador hasta el Usuario final. Con esta base
+                  sólida, la plataforma no solo asegura la operación actual, sino que sienta los cimientos tecnológicos
+                  necesarios para escalar hacia herramientas de analítica avanzada, motores de eventos mediante webhooks
+                  y un catálogo unificado de servicios institucionales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-tickets">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">unal-frontend.onrender.com/</div>
+                <span class="stat-chip" style="font-size: 0.68rem;">Gestión</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-tickets"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('tickets')">
+                <img class="carousel-slide-img active" src="Imágenes/k03 TicketsUnal/01 inicio tickets UNAL.PNG"
+                  alt="01 Inicio - Portal Tickets UNAL">
+                <img class="carousel-slide-img" src="Imágenes/k03 TicketsUnal/02 historial tickets UNAL.PNG"
+                  alt="02 Historial y Trazabilidad de Tickets">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-tickets">Vista: 01 Inicio - Portal Tickets UNAL</div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('tickets')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-tickets" onclick="toggleCarouselPlay('tickets')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('tickets')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-tickets">1 / 2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 13: 4. AVANZA (k04)
+           ==================================================================== -->
+      <section class="slide" id="slide-13" data-title="4. Avanza">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-private">Privado • Plataforma web</span>
+                <span class="stat-chip">Gestión de Proyectos</span>
+              </div>
+              <h2 class="tool-main-name">4. Avanza</h2>
+            </div>
+
+            <p class="tool-doc-intro">
+              Plataforma integral diseñada para la gestión estratégica de proyectos institucionales, unificando la
+              planificación y el seguimiento continuo en una experiencia visual intuitiva. A través de herramientas
+              dinámicas y colaborativas, los equipos de trabajo pueden estructurar sus metas y evaluar el avance,
+              transformando la ejecución operativa en un proceso organizado, transparente y eficiente. Estructurada para
+              optimizar el ciclo de vida de los proyectos a través de 4 grandes componentes funcionales:
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Visualización Dinámica de Proyectos</span>
+                </div>
+                <p class="doc-category-text">
+                  Incorpora herramientas gráficas e interactivas como tableros Kanban, cronogramas de Gantt y
+                  Estructuras de Desglose de Trabajo (EDT), permitiendo a los usuarios tener una perspectiva clara,
+                  integral y en tiempo real del estado de cada iniciativa.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Planificación y Despliegue Operativo</span>
+                </div>
+                <p class="doc-category-text">
+                  Permite articular las grandes metas institucionales en elementos medibles y ejecutables, organizando
+                  estratégicamente el trabajo a través de la definición precisa de indicadores de gestión, hitos clave y
+                  tareas específicas.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Gestión de Roles y Colaboración</span>
+                </div>
+                <p class="doc-category-text">
+                  Facilita la asignación clara de responsabilidades y niveles de acceso dentro de los equipos de
+                  proyecto, estableciendo perfiles definidos para directores, coordinadores, responsables de ejecución y
+                  visores, garantizando así la articulación y seguridad de la información.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Seguimiento Automatizado</span>
+                </div>
+                <p class="doc-category-text">
+                  Optimiza el control de los tiempos y la mitigación de retrasos a través de un sistema de
+                  notificaciones proactivo, el cual genera y envía alertas automáticas por correo electrónico sobre los
+                  vencimientos y compromisos de las actividades programadas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-avanza">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">avanza.unal.edu.co/</div>
+                <span class="stat-chip" style="font-size: 0.68rem;">Proyectos</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-avanza"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('avanza')">
+                <img class="carousel-slide-img active" src="Imágenes/k04 Avanza/01 avanza.PNG"
+                  alt="01 Inicio y Dashboard de Proyectos - Avanza">
+                <img class="carousel-slide-img" src="Imágenes/k04 Avanza/02 avanza.PNG"
+                  alt="02 Planificación y Estructura de Trabajo">
+                <img class="carousel-slide-img" src="Imágenes/k04 Avanza/03 avanza.PNG"
+                  alt="03 Cronograma y Monitoreo de Hitos">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-avanza">Vista: 01 Inicio y Dashboard de Proyectos - Avanza
+                </div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('avanza')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-avanza" onclick="toggleCarouselPlay('avanza')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('avanza')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-avanza">1 / 3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 14: 5. ACUERDOS DE PAGO (k05)
+           ==================================================================== -->
+      <section class="slide" id="slide-14" data-title="5. Acuerdos de Pago">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-private">Privado • Plataforma web</span>
+                <span class="stat-chip">Gestión Financiera</span>
+              </div>
+              <h2 class="tool-main-name">5. Acuerdos de Pago</h2>
+            </div>
+
+            <p class="tool-doc-intro">
+              Plataforma web intuitiva diseñada para facilitar la solicitud y el seguimiento a los acuerdos de pago de
+              los diferentes deudores de la Universidad Nacional de Colombia. A través de un sistema de gestión
+              articulada, la herramienta busca coordinar los esfuerzos de todas las dependencias que intervienen en el
+              proceso de aprobación, transformando los trámites financieros en un flujo organizado, transparente y
+              eficiente. Estructurada para atender las obligaciones económicas organizadas en 3 grandes categorías:
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Derechos de Matrícula</span>
+                </div>
+                <p class="doc-category-text">
+                  Incluye la gestión integral de las solicitudes y el seguimiento de los acuerdos de pago relacionados
+                  con los costos académicos de los estudiantes, facilitando la regularización de su situación financiera
+                  para garantizar su continuidad en la institución.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Resoluciones de Deuda</span>
+                </div>
+                <p class="doc-category-text">
+                  Agrupa los trámites y procesos asociados a las obligaciones formales y saldos pendientes que han sido
+                  oficializados mediante resoluciones por parte de la Universidad, permitiendo un seguimiento claro y
+                  estructurado para su liquidación.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Servicios de Extensión</span>
+                </div>
+                <p class="doc-category-text">
+                  Permite administrar y coordinar las solicitudes de pago correspondientes a la oferta de servicios
+                  adicionales que brinda la Universidad, tales como cursos, diplomados, consultorías, educación continua
+                  y otros proyectos dirigidos tanto a la comunidad interna como externa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-acuerdos">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">planeacion.bogota.unal.edu.co/acuerdo_pago/</div>
+                <span class="stat-chip" style="font-size: 0.68rem;">Finanzas</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-acuerdos"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('acuerdos')">
+                <img class="carousel-slide-img active" src="Imágenes/k05 Acuerdos de pago/1.png"
+                  alt="01 Portal Principal - Acuerdos de Pago">
+                <img class="carousel-slide-img" src="Imágenes/k05 Acuerdos de pago/2.png"
+                  alt="02 Solicitud y Registro de Deudor">
+                <img class="carousel-slide-img" src="Imágenes/k05 Acuerdos de pago/3.png"
+                  alt="03 Formulario y Condiciones de Pago">
+                <img class="carousel-slide-img" src="Imágenes/k05 Acuerdos de pago/4.png"
+                  alt="04 Plan de Cuotas y Trazabilidad">
+                <img class="carousel-slide-img" src="Imágenes/k05 Acuerdos de pago/5.png"
+                  alt="05 Flujo de Aprobación Institucional">
+                <img class="carousel-slide-img" src="Imágenes/k05 Acuerdos de pago/6.png"
+                  alt="06 Consulta de Estado y Certificados">
+                <img class="carousel-slide-img" src="Imágenes/k05 Acuerdos de pago/7.png"
+                  alt="07 Reportes y Consolidado Financiero">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-acuerdos">Vista: 01 Portal Principal - Acuerdos de Pago
+                </div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('acuerdos')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-acuerdos" onclick="toggleCarouselPlay('acuerdos')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('acuerdos')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-acuerdos">1 / 7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 15: 6. REVISIÓN DOCUMENTAL ESPECIALIZADA (k06)
+           ==================================================================== -->
+      <section class="slide" id="slide-15" data-title="6. Revisión Documental Especializada">
+        <div class="tool-slide-layout">
+          <div class="tool-text-column">
+            <div class="tool-header-block">
+              <div class="tool-badge-row">
+                <span class="access-pill access-ai">Privado • Inteligencia Conversacional</span>
+                <span class="stat-chip" style="color:#c4b5fd;">IA Normativa</span>
+              </div>
+              <h2 class="tool-main-name">6. Revisión Documental Especializada</h2>
+            </div>
+
+            <p class="tool-doc-intro">
+              Herramienta conversacional inteligente diseñada para facilitar la consulta y el acceso a los documentos
+              normativos de la Oficina de Gestión Ambiental (OGA) de la Universidad Nacional de Colombia. A través de
+              una interfaz basada en lenguaje natural, los usuarios pueden encontrar de manera ágil protocolos,
+              formatos, guías e instructivos, transformando la búsqueda documental en un proceso preciso, confiable y
+              libre de fricciones. Estructurada bajo un modelo tecnológico seguro y replicable, organizado en 4 grandes
+              pilares estratégicos:
+            </p>
+
+            <div class="tool-categories-container">
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Consulta en Lenguaje Natural</span>
+                </div>
+                <p class="doc-category-text">
+                  Permite a contratistas, docentes, personal de laboratorios y administrativos interactuar con el
+                  sistema de manera fluida, como si consultaran a un colega. El chatbot comprende la solicitud y
+                  responde proporcionando siempre el documento oficial aplicable junto con su enlace directo,
+                  garantizando que no se invente información en ningún momento.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Rigor y Vigencia Documental</span>
+                </div>
+                <p class="doc-category-text">
+                  Mitiga de raíz el riesgo de entregar información obsoleta o desactualizada. El sistema opera strictly
+                  como una herramienta de acceso a la información, basando todas sus respuestas en documentos reales,
+                  curados y vigentes; si no existe evidencia documental para resolver una consulta, lo indica
+                  explícitamente.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Autonomía y Gestión Descentralizada</span>
+                </div>
+                <p class="doc-category-text">
+                  Ofrece un panel de administración propio que permite a cada dependencia publicar, actualizar y
+                  mantener sus documentos de forma independiente. Esto agiliza la actualización operativa, eliminando la
+                  necesidad de intervención del equipo de desarrollo cada vez que se modifica un formato o se aprueba un
+                  nuevo protocolo.
+                </p>
+              </div>
+
+              <div class="doc-category-card">
+                <div class="doc-category-title">
+                  <span>Arquitectura Escalable</span>
+                </div>
+                <p class="doc-category-text">
+                  Desarrollada bajo un modelo institucional integral que combina fichas curadas, autenticación oficial y
+                  consulta conversacional. Este diseño no se limita a la OGA, sino que es completamente replicable para
+                  cualquier otra dependencia de la Universidad que requiera optimizar su gestión documental, permitiendo
+                  su implementación sin necesidad de un rediseño desde cero.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-visual-column">
+            <div class="anim-carousel-container" id="carousel-revision" style="border-color: rgba(139, 92, 246, 0.4);">
+              <div class="carousel-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-url">planeacion.bogota.unal.edu.co/revision_documental/</div>
+                <span class="stat-chip" style="font-size: 0.68rem; color:#c4b5fd;">AI Docs</span>
+              </div>
+
+              <div class="carousel-time-bar-bg">
+                <div class="carousel-time-bar-fill" id="cbar-revision"></div>
+              </div>
+
+              <div class="carousel-view-screen" onclick="openActiveCarouselLightbox('revision')">
+                <img class="carousel-slide-img active"
+                  src="Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.36.00 PM.jpeg"
+                  alt="01 Interfaz Conversacional de Consulta">
+                <img class="carousel-slide-img"
+                  src="Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.36.51 PM.jpeg"
+                  alt="02 Búsqueda Directa de Protocolos y Guías">
+                <img class="carousel-slide-img"
+                  src="Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.37.31 PM.jpeg"
+                  alt="03 Respuestas con Enlace Oficial Directo">
+                <img class="carousel-slide-img"
+                  src="Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.39.22 PM.jpeg"
+                  alt="04 Panel de Administración Descentralizado">
+                <img class="carousel-slide-img"
+                  src="Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.41.30 PM.jpeg"
+                  alt="05 Carga y Gestión de Documentos Curados">
+                <div class="mockup-overlay-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  Clic para Zoom HD
+                </div>
+              </div>
+
+              <div class="carousel-controls-bar">
+                <div class="carousel-caption-info" id="ccap-revision">Vista: 01 Interfaz Conversacional de Consulta
+                </div>
+                <div class="carousel-actions-wrap">
+                  <button class="carousel-ctrl-btn" onclick="prevCarouselSlide('revision')" title="Anterior">◀</button>
+                  <button class="carousel-ctrl-btn" id="cplay-revision" onclick="toggleCarouselPlay('revision')"
+                    title="Pausar / Reproducir">⏸</button>
+                  <button class="carousel-ctrl-btn" onclick="nextCarouselSlide('revision')" title="Siguiente">▶</button>
+                  <span class="carousel-counter-label" id="cnum-revision">1 / 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 16: TABLA COMPARATIVA & VALOR ESTRATÉGICO INSTITUCIONAL
+           ==================================================================== -->
+      <section class="slide" id="slide-16" data-title="Valor Estratégico e Impacto">
         <div class="slide-summary-layout">
           <div class="slide-header" style="margin-bottom: 0.5rem;">
             <span class="slide-tag">Síntesis y Cierre</span>
             <h2 class="slide-title">Valor Estratégico e <span class="highlight">Impacto Institucional</span></h2>
-            <p class="slide-subtitle">Resumen articulado de las herramientas y los cuatro pilares de transformación
-              institucional.</p>
+            <p class="slide-subtitle">Resumen articulado de las 12 herramientas del Ecosistema y Hub OPE con sus pilares
+              de transformación.</p>
           </div>
 
           <!-- Los 4 Pilares de Impacto Literales -->
@@ -1106,21 +2012,28 @@
         </svg>
       </button>
 
-      <!-- Indicadores de Slide en cápsula para 9 slides -->
+      <!-- Indicadores de Slide en cápsula para 16 slides -->
       <div class="dock-indicators" id="dock-indicators">
-        <div class="dock-dot active" onclick="goToSlide(1)" title="1. Portada"></div>
-        <div class="dock-dot" onclick="goToSlide(2)" title="2. Panorama General"></div>
+        <div class="dock-dot active" onclick="goToSlide(1)" title="1. Portada OPE"></div>
+        <div class="dock-dot" onclick="goToSlide(2)" title="2. Panorama Ecosistema"></div>
         <div class="dock-dot" onclick="goToSlide(3)" title="3. La Sede en Cifras"></div>
         <div class="dock-dot" onclick="goToSlide(4)" title="4. Indicadores Estratégicos"></div>
         <div class="dock-dot" onclick="goToSlide(5)" title="5. OPEData"></div>
         <div class="dock-dot" onclick="goToSlide(6)" title="6. PRIG"></div>
         <div class="dock-dot" onclick="goToSlide(7)" title="7. La Sede en Contexto"></div>
         <div class="dock-dot" onclick="goToSlide(8)" title="8. Databot"></div>
-        <div class="dock-dot" onclick="goToSlide(9)" title="9. Valor Estratégico"></div>
+        <div class="dock-dot" onclick="goToSlide(9)" title="9. Panorama Hub Calidad"></div>
+        <div class="dock-dot" onclick="goToSlide(10)" title="10. Racionalización Trámites"></div>
+        <div class="dock-dot" onclick="goToSlide(11)" title="11. Revisión por Dirección"></div>
+        <div class="dock-dot" onclick="goToSlide(12)" title="12. Tickets UNAL"></div>
+        <div class="dock-dot" onclick="goToSlide(13)" title="13. Avanza"></div>
+        <div class="dock-dot" onclick="goToSlide(14)" title="14. Acuerdos de Pago"></div>
+        <div class="dock-dot" onclick="goToSlide(15)" title="15. Revisión Documental"></div>
+        <div class="dock-dot" onclick="goToSlide(16)" title="16. Valor Estratégico"></div>
       </div>
 
       <div class="dock-counter">
-        <span id="slide-num">1</span> / 9
+        <span id="slide-num">1</span> / 16
       </div>
 
       <button class="dock-nav-btn" id="dock-btn-next" title="Siguiente (Flecha Derecha / Espacio)"
@@ -1146,14 +2059,14 @@
       <div>
         <span class="slide-tag">Catálogo Ejecutivo</span>
         <h2 class="slide-title">Centro de <span class="highlight">Herramientas OPE</span></h2>
-        <p class="slide-subtitle">Exploración detallada de las seis plataformas con fichas técnicas, enlaces oficiales y
+        <p class="slide-subtitle">Exploración detallada de las doce plataformas con fichas técnicas, enlaces oficiales y
           capturas de alta definición.</p>
       </div>
 
       <div class="dashboard-filter-group">
-        <button class="filter-btn active" onclick="filterDashboard('all', this)">Todas (6)</button>
+        <button class="filter-btn active" onclick="filterDashboard('all', this)">Todas (12)</button>
         <button class="filter-btn" onclick="filterDashboard('public', this)">Acceso Público (5)</button>
-        <button class="filter-btn" onclick="filterDashboard('internal', this)">Acceso Interno (1)</button>
+        <button class="filter-btn" onclick="filterDashboard('internal', this)">Acceso Interno (7)</button>
         <button class="filter-btn" onclick="filterDashboard('ai', this)">IA Institucional (2)</button>
       </div>
     </div>
@@ -1348,6 +2261,209 @@
           </button>
           <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
             onclick="openLightboxDirect('Imágenes/06 Databot/01 Databot inicio.jpeg', 'Databot - Pantalla Completa')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 7. Racionalización de Trámites (Hub 1) -->
+      <div class="hub-tool-card" data-category="internal">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/k01 Racionalizacion/01 evaluador.PNG', 'Racionalización de Trámites - Inicio')">
+          <img src="Imágenes/k01 Racionalizacion/01 evaluador.PNG" alt="Racionalización de Trámites">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-private">Función Pública · Trámites</span>
+          </div>
+          <h3 class="hub-card-title">7. Racionalización de Trámites</h3>
+          <p class="hub-card-desc">
+            Plataforma integral para la gestión, análisis y optimización de trámites bajo la metodología de Función
+            Pública:
+          </p>
+          <ul class="hub-features-list">
+            <li>Evaluación objetiva para la priorización e insatisfacción.</li>
+            <li>Análisis de viabilidad normativa, administrativa y tecnológica.</li>
+            <li>Medición de 10 criterios para automatización (umbral 3.8).</li>
+            <li>Seguimiento cronológico, fichas de difusión y reportería.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <button class="hub-portal-btn" style="background:none; border:none; cursor:pointer;"
+            onclick="toggleMode('slides'); goToSlide(10);">
+            Ir a Diapositiva <span>→</span>
+          </button>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/k01 Racionalizacion/01 evaluador.PNG', 'Racionalización de Trámites - Pantalla Completa')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 8. Revisión por la Dirección (Hub 2) -->
+      <div class="hub-tool-card" data-category="internal">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/k02 Revisión por la dirección/01 rxd.PNG', 'Revisión por la Dirección - Inicio')">
+          <img src="Imágenes/k02 Revisión por la dirección/01 rxd.PNG" alt="Revisión por la Dirección">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-private">Gestión de Calidad (SGC)</span>
+          </div>
+          <h3 class="hub-card-title">8. Revisión por la Dirección</h3>
+          <p class="hub-card-desc">
+            Solución web modular para automatizar el ciclo de evaluación directiva del Sistema de Gestión de la Calidad:
+          </p>
+          <ul class="hub-features-list">
+            <li>Evaluación metodológica estructurada para líderes de proceso.</li>
+            <li>Dashboard directivo con reportes ejecutivos en tiempo real.</li>
+            <li>Trazabilidad, preservación y archivo histórico centralizado.</li>
+            <li>Benchmarking interno y análisis comparativo entre facultades.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <button class="hub-portal-btn" style="background:none; border:none; cursor:pointer;"
+            onclick="toggleMode('slides'); goToSlide(11);">
+            Ir a Diapositiva <span>→</span>
+          </button>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/k02 Revisión por la dirección/01 rxd.PNG', 'Revisión por la Dirección - Pantalla Completa')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 9. Tickets UNAL (Hub 3) -->
+      <div class="hub-tool-card" data-category="internal">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/k03 TicketsUnal/01 inicio tickets UNAL.PNG', 'Tickets UNAL - Inicio')">
+          <img src="Imágenes/k03 TicketsUnal/01 inicio tickets UNAL.PNG" alt="Tickets UNAL">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-private">Plataforma de Trámites</span>
+          </div>
+          <h3 class="hub-card-title">9. Tickets UNAL</h3>
+          <p class="hub-card-desc">
+            Plataforma No-Code/Low-Code institucional para digitalizar trámites y servicios sin silos operativos:
+          </p>
+          <ul class="hub-features-list">
+            <li>Autonomía visual Drag & Drop sin escribir código.</li>
+            <li>Trazabilidad total en tiempo real (Portal y Agente).</li>
+            <li>Gobernanza de datos maestros como única fuente de verdad.</li>
+            <li>Seguridad IAM/Zero-Trust y arquitectura escalable.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <button class="hub-portal-btn" style="background:none; border:none; cursor:pointer;"
+            onclick="toggleMode('slides'); goToSlide(12);">
+            Ir a Diapositiva <span>→</span>
+          </button>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/k03 TicketsUnal/01 inicio tickets UNAL.PNG', 'Tickets UNAL - Pantalla Completa')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 10. Avanza (Hub 4) -->
+      <div class="hub-tool-card" data-category="internal">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/k04 Avanza/01 avanza.PNG', 'Avanza - Inicio')">
+          <img src="Imágenes/k04 Avanza/01 avanza.PNG" alt="Avanza">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-private">Gestión de Proyectos</span>
+          </div>
+          <h3 class="hub-card-title">10. Avanza</h3>
+          <p class="hub-card-desc">
+            Plataforma integral para la gestión estratégica, planificación visual y monitoreo continuo de proyectos
+            institucionales:
+          </p>
+          <ul class="hub-features-list">
+            <li>Tableros Kanban, cronogramas Gantt y estructuras EDT.</li>
+            <li>Articulación de metas institucionales en hitos e indicadores.</li>
+            <li>Asignación clara de roles, perfiles y colaboración.</li>
+            <li>Alertas y notificaciones automáticas por correo electrónico.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <button class="hub-portal-btn" style="background:none; border:none; cursor:pointer;"
+            onclick="toggleMode('slides'); goToSlide(13);">
+            Ir a Diapositiva <span>→</span>
+          </button>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/k04 Avanza/01 avanza.PNG', 'Avanza - Pantalla Completa')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 11. Acuerdos de Pago (Hub 5) -->
+      <div class="hub-tool-card" data-category="internal">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/k05 Acuerdos de pago/1.png', 'Acuerdos de Pago - Inicio')">
+          <img src="Imágenes/k05 Acuerdos de pago/1.png" alt="Acuerdos de Pago">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-private">Gestión Financiera</span>
+          </div>
+          <h3 class="hub-card-title">11. Acuerdos de Pago</h3>
+          <p class="hub-card-desc">
+            Plataforma intuitiva para la solicitud, aprobación y seguimiento a acuerdos de pago de deudores
+            institucionales:
+          </p>
+          <ul class="hub-features-list">
+            <li>Gestión de derechos de matrícula para estudiantes.</li>
+            <li>Seguimiento a resoluciones de deuda formalizadas.</li>
+            <li>Administración de trámites por servicios de extensión.</li>
+            <li>Coordinación transparente entre dependencias.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <button class="hub-portal-btn" style="background:none; border:none; cursor:pointer;"
+            onclick="toggleMode('slides'); goToSlide(14);">
+            Ir a Diapositiva <span>→</span>
+          </button>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/k05 Acuerdos de pago/1.png', 'Acuerdos de Pago - Pantalla Completa')">
+            Ver Capturas
+          </button>
+        </div>
+      </div>
+
+      <!-- 12. Revisión Documental Especializada (Hub 6) -->
+      <div class="hub-tool-card" data-category="internal ai" style="border-color: rgba(139, 92, 246, 0.4);">
+        <div class="hub-card-media"
+          onclick="openLightboxDirect('Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.36.00 PM.jpeg', 'Revisión Documental - Inicio')">
+          <img src="Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.36.00 PM.jpeg"
+            alt="Revisión Documental OGA">
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-tags">
+            <span class="access-pill access-ai">IA Conversacional Normativa</span>
+          </div>
+          <h3 class="hub-card-title">12. Revisión Documental Especializada</h3>
+          <p class="hub-card-desc">
+            Asistente conversacional inteligente para la consulta ágil y precisa de normas y guías de la Oficina de
+            Gestión Ambiental (OGA):
+          </p>
+          <ul class="hub-features-list">
+            <li>Interacción fluida en lenguaje natural con enlace oficial directo.</li>
+            <li>Garantía de rigor y vigencia documental sin alucinaciones.</li>
+            <li>Panel de administración autónomo y descentralizado.</li>
+            <li>Arquitectura institucional 100% escalable y replicable.</li>
+          </ul>
+        </div>
+        <div class="hub-card-footer">
+          <button class="hub-portal-btn" style="background:none; border:none; cursor:pointer;"
+            onclick="toggleMode('slides'); goToSlide(15);">
+            Ir a Diapositiva <span>→</span>
+          </button>
+          <button class="btn-icon-action" style="height: 30px; font-size: 0.75rem;"
+            onclick="openLightboxDirect('Imágenes/k06 Revision documental/WhatsApp Image 2026-09-08 at 3.36.00 PM.jpeg', 'Revisión Documental - Pantalla Completa')">
             Ver Capturas
           </button>
         </div>

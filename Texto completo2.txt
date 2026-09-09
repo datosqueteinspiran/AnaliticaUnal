@@ -1,0 +1,146 @@
+Kit de herramientas para la gestión – Sede Bogotá
+
+Marco Conceptual y desarrollos para la gestión de la Oficina de Planeación y Estadística (OPE)
+
+La Universidad Nacional de Colombia — Sede Bogotá, comprometida con la excelencia y la generación de conocimiento, ha consolidado una cultura de toma de decisiones basada en datos para comprender a fondo sus dinámicas institucionales y su impacto en el entorno. Con el propósito fundamental de fortalecer el conocimiento de la Universidad y, en particular, de la Sede Bogotá, la Oficina de Planeación y Estadística (OPE) ha desarrollado un robusto Ecosistema de Analítica Institucional. Este ecosistema está conformado por una serie de plataformas tecnológicas integradas que operan bajo modalidades de autoservicio, centralización de datos y transparencia, proporcionando evidencia técnica esencial para directivos, docentes, investigadores, estudiantes, entes de control y la ciudadanía en general.
+
+Componentes del kit
+
+1. Racionalización de trámites
+
+https://script.google.com/macros/s/AKfycbzwfBD8Wsn2uR5E6e8axSvE9W60T52cEBllUk-U-am-lfHcEDmTQf2c9rdnjSER1PPLlA/exec
+
+Plataforma integral diseñada para la gestión, análisis y optimización de trámites y servicios institucionales, alineada estrictamente con la metodología normativa Departamento Administrativo de la Función Pública. A través de un flujo estructurado en tres escenarios sucesivos y dependientes, la herramienta guía el diagnóstico administrativo hasta su materialización tecnológica, transformando la evaluación operativa en soluciones accionables. Estructurada para gestionar el ciclo completo de intervención a través de 4 componentes funcionales:
+
+Evaluación para la Priorización: Mide de forma objetiva criterios clave como la cobertura, el volumen de solicitudes y los niveles de insatisfacción, permitiendo reconocer y focalizar los esfuerzos en los puntos más urgentes de intervención institucional.
+
+Análisis de Viabilidad y Priorización: Facilita la toma de decisiones al especificar la posibilidad real de intervención, determinando su tipo (normativo, administrativo o tecnológico) y su viabilidad, habilitando el paso a la siguiente fase productiva.
+
+Evaluación para la Automatización: Aplica un modelo de medición basado en 10 criterios con ponderaciones establecidas por la Función Pública para intervenciones tecnológicas. Identifica y deriva automáticamente al equipo de desarrollo aquellos trámites que superan la calificación de 3.8 para la creación de su respectiva solución.
+
+Seguimiento, Control y Reportería: Mantiene una línea cronológica detallada de gestión, permitiendo registrar notas y comentarios en cada trámite. Además, facilita la impresión de fichas particulares para difusión o archivo y genera gráficos interactivos agrupados por proceso, mostrando el porcentaje de avance en el universo de trámites evaluados.
+
+2. Revisión por la dirección
+
+ https://planeacion.bogota.unal.edu.co/acuerdo_pago
+
+Solución digital web modular, ágil y centralizada, diseñada específicamente para automatizar el ciclo completo de la revisión por la Dirección del Sistema de Gestión de la Calidad (SGC). A través de una plataforma que guía a los líderes y gestores de procesos mediante una evaluación estructurada, el sistema transforma la recolección de datos en información ejecutiva lista para la toma de decisiones estratégicas y la formulación de planes de mejora. Estructurada para optimizar el análisis institucional a través de 4 grandes componentes funcionales:
+
+Evaluación Estructurada de Procesos: Acompaña y guía de manera metódica a los líderes y gestores durante todo el ciclo de revisión, garantizando que el ingreso y la evaluación de la información cumplan con los lineamientos del SGC de forma estandarizada.
+
+Dashboard Directivo de Desempeño: Consolida automáticamente los resultados de las evaluaciones para ofrecer una visualización clara y en tiempo real del estado del sistema. Centraliza los datos para generar reportes ejecutivos precisos, diseñados especialmente para la alta dirección.
+
+Trazabilidad y Archivo Histórico: A través de su Modo Administrador, permite guardar, organizar e historiar todas las evaluaciones en una base de datos local centralizada. Esto garantiza la preservación de la memoria institucional, la seguridad de la información y el seguimiento continuo a lo largo del tiempo.
+
+Análisis Comparativo y Detección de Tendencias: Facilita la carga de evaluaciones previas pertenecientes a diferentes facultades, sedes o dependencias para realizar ejercicios de benchmarking interno. Esta herramienta analítica permite identificar ágilmente qué procesos presentan un desempeño crítico y en qué componentes específicos se deben concentrar los esfuerzos de mejora.
+
+3. Tickets UNAL 
+
+ https://unal-frontend.onrender.com
+
+Plataforma institucional No-Code/Low-Code diseñada para unificar, digitalizar y gestionar de forma integral los trámites y servicios de la Universidad Nacional de Colombia. Su objetivo principal es eliminar los silos operativos (uso disperso de correos y Excel) al permitir que cualquier dependencia configure, publique y administre sus propios flujos de trabajo y formularios de manera visual, autónoma y sin necesidad de desarrollo de software, garantizando total trazabilidad en tiempo real.
+
+Autonomía y Flexibilidad Tecnológica (No-Code / Cero Silos): Esta plataforma descentraliza la creación de servicios al permitir que cualquier gestor diseñe formularios y flujos de trabajo mediante un sistema visual de 'arrastrar y soltar' (Drag & Drop), sin necesidad de escribir código. Además, se apoya en una arquitectura unificada (basada en PostgreSQL y JSONB) que agrupa a múltiples dependencias, otorgando a cada trámite su propio esquema de datos dinámico sin alterar la base de datos central de la institución.
+
+Trazabilidad Total y Transparencia Operativa: Elimina la 'caja negra' administrativa al garantizar que tanto los usuarios como los gestores visualicen en tiempo real el estado exacto de sus solicitudes a través del Portal de Trámites y el Panel de Agente. Esta gestión automatizada incluye la emisión de alertas y notificaciones por cada cambio de estado, lo que elimina la dependencia de la memoria del personal operativo y reduce significativamente los cuellos de botella.
+
+Gobernanza de Datos y Estandarización Institucional: La herramienta asegura una correcta gestión de datos maestros centralizando la información institucional (ya sea mediante Excel, carga manual o conexión con APIs externas) para que actúe como una única 'fuente de verdad' que alimenta automáticamente los formularios. Asimismo, garantiza la estandarización mediante una Ficha de Trámite que ofrece a los usuarios una presentación estructurada y transparente de los servicios (detallando tiempos, costos, canales de soporte y macroproceso asociado) previamente a la radicación.
+
+Seguridad Estructural y Escalabilidad a Futuro: El sistema protege la información mediante un control de acceso jerárquico (IAM y Zero-Trust) que refleja la estructura real de la universidad (Institución > Sede > Espacio de Trabajo), definiendo permisos y roles estrictos que van desde el Súper Administrador hasta el Usuario final. Con esta base sólida, la plataforma no solo asegura la operación actual, sino que sienta los cimientos tecnológicos necesarios para escalar hacia herramientas de analítica avanzada, motores de eventos mediante webhooks y un catálogo unificado de servicios institucionales.
+
+4. Avanza
+
+ https://avanza.unal.edu.co/
+
+Plataforma integral diseñada para la gestión estratégica de proyectos institucionales, unificando la planificación y el seguimiento continuo en una experiencia visual intuitiva. A través de herramientas dinámicas y colaborativas, los equipos de trabajo pueden estructurar sus metas y evaluar el avance, transformando la ejecución operativa en un proceso organizado, transparente y eficiente. Estructurada para optimizar el ciclo de vida de los proyectos a través de 4 grandes componentes funcionales:
+
+Visualización Dinámica de Proyectos: Incorpora herramientas gráficas e interactivas como tableros Kanban, cronogramas de Gantt y Estructuras de Desglose de Trabajo (EDT), permitiendo a los usuarios tener una perspectiva clara, integral y en tiempo real del estado de cada iniciativa.
+
+Planificación y Despliegue Operativo: Permite articular las grandes metas institucionales en elementos medibles y ejecutables, organizando estratégicamente el trabajo a través de la definición precisa de indicadores de gestión, hitos clave y tareas específicas.
+
+Gestión de Roles y Colaboración: Facilita la asignación clara de responsabilidades y niveles de acceso dentro de los equipos de proyecto, estableciendo perfiles definidos para directores, coordinadores, responsables de ejecución y visores, garantizando así la articulación y seguridad de la información.
+
+Seguimiento Automatizado: Optimiza el control de los tiempos y la mitigación de retrasos a través de un sistema de notificaciones proactivo, el cual genera y envía alertas automáticas por correo electrónico sobre los vencimientos y compromisos de las actividades programadas.
+
+5. Acuerdos de pago
+
+ https://planeacion.bogota.unal.edu.co/acuerdo_pago
+
+Plataforma web intuitiva diseñada para facilitar la solicitud y el seguimiento a los acuerdos de pago de los diferentes deudores de la Universidad Nacional de Colombia. A través de un sistema de gestión articulada, la herramienta busca coordinar los esfuerzos de todas las dependencias que intervienen en el proceso de aprobación, transformando los trámites financieros en un flujo organizado, transparente y eficiente. Estructurada para atender las obligaciones económicas organizadas en 3 grandes categorías:
+
+Derechos de Matrícula: Incluye la gestión integral de las solicitudes y el seguimiento de los acuerdos de pago relacionados con los costos académicos de los estudiantes, facilitando la regularización de su situación financiera para garantizar su continuidad en la institución.
+
+Resoluciones de Deuda: Agrupa los trámites y procesos asociados a las obligaciones formales y saldos pendientes que han sido oficializados mediante resoluciones por parte de la Universidad, permitiendo un seguimiento claro y estructurado para su liquidación.
+
+Servicios de Extensión: Permite administrar y coordinar las solicitudes de pago correspondientes a la oferta de servicios adicionales que brinda la Universidad, tales como cursos, diplomados, consultorías, educación continua y otros proyectos dirigidos tanto a la comunidad interna como externa.
+
+6. Revisión documental especializada
+
+ https://planeacion.bogota.unal.edu.co/acuerdo_pago
+
+Herramienta conversacional inteligente diseñada para facilitar la consulta y el acceso a los documentos normativos de la Oficina de Gestión Ambiental (OGA) de la Universidad Nacional de Colombia. A través de una interfaz basada en lenguaje natural, los usuarios pueden encontrar de manera ágil protocolos, formatos, guías e instructivos, transformando la búsqueda documental en un proceso preciso, confiable y libre de fricciones. Estructurada bajo un modelo tecnológico seguro y replicable, organizado en 4 grandes pilares estratégicos:
+
+Consulta en Lenguaje Natural: Permite a contratistas, docentes, personal de laboratorios y administrativos interactuar con el sistema de manera fluida, como si consultaran a un colega. El chatbot comprende la solicitud y responde proporcionando siempre el documento oficial aplicable junto con su enlace directo, garantizando que no se invente información en ningún momento.
+
+Rigor y Vigencia Documental: Mitiga de raíz el riesgo de entregar información obsoleta o desactualizada. El sistema opera estrictamente como una herramienta de acceso a la información, basando todas sus respuestas en documentos reales, curados y vigentes; si no existe evidencia documental para resolver una consulta, lo indica explícitamente.
+
+Autonomía y Gestión Descentralizada: Ofrece un panel de administración propio que permite a cada dependencia publicar, actualizar y mantener sus documentos de forma independiente. Esto agiliza la actualización operativa, eliminando la necesidad de intervención del equipo de desarrollo cada vez que se modifica un formato o se aprueba un nuevo protocolo.
+
+Arquitectura Escalable: Desarrollada bajo un modelo institucional integral que combina fichas curadas, autenticación oficial y consulta conversacional. Este diseño no se limita a la OGA, sino que es completamente replicable para cualquier otra dependencia de la Universidad que requiera optimizar su gestión documental, permitiendo su implementación sin necesidad de un rediseño desde cero.
+
+
+Herramienta
+
+Propósito Principal
+
+Nivel de Acceso
+
+Tipo
+
+Racionalización de trámites
+
+Evaluar, priorizar y viabilizar la automatización tecnológica de servicios institucionales.
+
+Privado
+
+Aplicación web
+
+Revisión por la dirección
+
+Automatizar y consolidar la evaluación directiva de calidad.
+
+Privado
+
+Plataforma web
+
+Tickets UNAL 
+
+Automatizar la recepción, enrutamiento y trazabilidad de trámites.
+
+Privado
+
+Plataforma web
+
+Avanza
+
+Planificar y monitorear visualmente la ejecución de proyectos.
+
+Privado
+
+Plataforma web
+
+Acuerdos de pago
+
+Centralizar el trámite y seguimiento de deudas institucionales.
+
+Privado
+
+Plataforma web
+
+Revisión documental especializada
+
+Resolver consultas normativas mediante inteligencia conversacional.
+
+Privado
+
+Plataforma web
