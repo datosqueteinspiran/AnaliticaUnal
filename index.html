@@ -267,15 +267,15 @@
               </p>
               <div class="overview-card-footer">
                 <div class="overview-action-link">Explorar herramienta <span>→</span></div>
-                <span class="overview-external-link" style="color:var(--text-muted); cursor:default;"
-                  onclick="event.stopPropagation()">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="12" y1="8" x2="12" y2="12" />
-                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                <a href="#" onclick="event.stopPropagation(); goToSlide(8);" class="overview-external-link"
+                  title="Abrir simulador interactivo de Databot">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
                   </svg>
-                  <span>Innovación IA · Sede Bogotá</span>
-                </span>
+                  <span>Probar Simulador Databot ↗</span>
+                </a>
               </div>
             </div>
           </div>
@@ -381,7 +381,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">planeacion.bogota.unal.edu.co/sede_en_cifras/</div>
+                <a href="https://planeacion.bogota.unal.edu.co/sede_en_cifras/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  planeacion.bogota.unal.edu.co/sede_en_cifras/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem;">Galería OPE</span>
               </div>
 
@@ -510,7 +513,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">planeacion.bogota.unal.edu.co/indicadores/</div>
+                <a href="https://planeacion.bogota.unal.edu.co/indicadores/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  planeacion.bogota.unal.edu.co/indicadores/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem;">Estratégico</span>
               </div>
 
@@ -638,7 +644,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">opedata.unal.edu.co/</div>
+                <a href="https://opedata.unal.edu.co/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  opedata.unal.edu.co/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem; color:#fbbf24;">Seguro</span>
               </div>
 
@@ -761,7 +770,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">prig.bogota.unal.edu.co/</div>
+                <a href="https://prig.bogota.unal.edu.co/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  prig.bogota.unal.edu.co/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem;">Gestión Sede</span>
               </div>
 
@@ -870,7 +882,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">planeacion.bogota.unal.edu.co/sede_en_contexto/</div>
+                <a href="https://planeacion.bogota.unal.edu.co/sede_en_contexto/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  planeacion.bogota.unal.edu.co/sede_en_contexto/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem;">Estudios</span>
               </div>
 
@@ -989,7 +1004,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">databot.ope.unal.edu.co/</div>
+                <a href="#" onclick="event.preventDefault(); switchDatabotView('sim');" class="mockup-url"
+                  title="Abrir simulador interactivo de Databot">
+                  databot.ope.unal.edu.co/ (Simulador) ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem; color:#c4b5fd;">AI Core</span>
               </div>
 
@@ -1107,6 +1125,7 @@
             <div class="overview-card" onclick="goToSlide(11)">
               <div class="overview-card-header">
                 <h3 class="overview-tool-title">2. Revisión por la Dirección</h3>
+                <span class="dev-tag"><span class="dev-tag-dot"></span>En desarrollo</span>
               </div>
               <p class="overview-card-desc">
                 Automatización del ciclo de evaluación directiva del Sistema de Gestión de la Calidad (SGC).
@@ -1207,15 +1226,15 @@
               </p>
               <div class="overview-card-footer">
                 <div class="overview-action-link">Explorar herramienta <span>→</span></div>
-                <span class="overview-external-link" style="color:var(--text-muted); cursor:default;"
-                  onclick="event.stopPropagation()">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="12" y1="8" x2="12" />
-                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                <a href="#" onclick="event.stopPropagation(); goToSlide(15);" class="overview-external-link"
+                  title="Explorar prototipo de Revisión Documental">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
                   </svg>
-                  <span>IA Normativa · OGA</span>
-                </span>
+                  <span>Explorar Prototipo IA · OGA ↗</span>
+                </a>
               </div>
             </div>
           </div>
@@ -1302,14 +1321,9 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">script.google.com/macros/s/AKfycbw--C...</div>
                 <a href="https://script.google.com/macros/s/AKfycbw--C8ZWmC3NouKqZBUPy_c5pNpVHwWzzEchJpwFPnTKs6XxH1maknH7SokrRIZZp2IcA/exec"
-                  target="_blank" class="mockup-external-link" title="Abrir enlace oficial">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
+                  target="_blank" rel="noopener noreferrer" class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  script.google.com/macros/s/AKfycbw.../exec ↗
                 </a>
               </div>
 
@@ -1367,6 +1381,7 @@
               <div class="tool-badge-row">
                 <span class="access-pill access-private">Privado • Plataforma web</span>
                 <span class="stat-chip">Gestión de Calidad</span>
+                <span class="dev-tag"><span class="dev-tag-dot"></span>En desarrollo</span>
               </div>
               <h2 class="tool-main-name">2. Revisión por la Dirección</h2>
             </div>
@@ -1436,7 +1451,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">rxd-chi.vercel.app/</div>
+                <a href="https://rxd-chi.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  rxd-chi.vercel.app/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem;">Calidad SGC</span>
               </div>
 
@@ -1567,7 +1585,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">unal-frontend.onrender.com/</div>
+                <a href="https://unal-frontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  unal-frontend.onrender.com/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem;">Gestión</span>
               </div>
 
@@ -1683,7 +1704,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">avanza.unal.edu.co/</div>
+                <a href="https://avanza.unal.edu.co/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  avanza.unal.edu.co/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem;">Proyectos</span>
               </div>
 
@@ -1791,7 +1815,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">planeacion.bogota.unal.edu.co/acuerdo_pago/</div>
+                <a href="https://planeacion.bogota.unal.edu.co/acuerdo_pago/" target="_blank" rel="noopener noreferrer"
+                  class="mockup-url" title="Abrir portal oficial en nueva pestaña">
+                  planeacion.bogota.unal.edu.co/acuerdo_pago/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem;">Finanzas</span>
               </div>
 
@@ -1924,7 +1951,10 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="mockup-url">planeacion.bogota.unal.edu.co/revision_documental/</div>
+                <a href="#" onclick="event.preventDefault(); goToSlide(15);" class="mockup-url"
+                  title="Ver prototipo de Revisión Documental">
+                  planeacion.bogota.unal.edu.co/revision_documental/ ↗
+                </a>
                 <span class="stat-chip" style="font-size: 0.68rem; color:#c4b5fd;">AI Docs</span>
               </div>
 
@@ -2340,6 +2370,7 @@
         <div class="hub-card-body">
           <div class="hub-card-tags">
             <span class="access-pill access-private">Gestión de Calidad (SGC)</span>
+            <span class="dev-tag"><span class="dev-tag-dot"></span>En desarrollo</span>
           </div>
           <h3 class="hub-card-title">8. Revisión por la Dirección</h3>
           <p class="hub-card-desc">
