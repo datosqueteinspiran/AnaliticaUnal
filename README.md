@@ -8,8 +8,9 @@ Aplicación web interactiva que presenta de forma ejecutiva y visual el Ecosiste
 ## 🚀 Características Principales
 
 1. **Modo Presentación (16:9)**:
-   - 9 diapositivas ejecutivas con diseño institucional UNAL.
+   - 16 diapositivas ejecutivas con diseño institucional UNAL.
    - Carruseles dinámicos con capturas de pantalla reales, barra de progreso y temporizador.
+   - Barra de URL interactiva sobre cada carrusel para navegación directa al portal oficial de cada herramienta.
    - Simulador interactivo del agente inteligente **Databot**.
    - Navegación por teclado (Flechas `←` / `→`, `Espacio`, `Inicio`, `Fin`) y soporte de pantalla completa (`F`).
    - Modal lightbox para ampliación y zoom de capturas.
